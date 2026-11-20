@@ -1,0 +1,2814 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jaltarang Hotel & Lakeside Resort — Luxury lakeside stay in Sahyadri Valley, Maharashtra with infinity pool, lakeview suites, and separate Pure Veg & Non-Veg kitchens." />
+  <title>Jaltarang Hotel &amp; Lakeside Resort | Official Resort Website</title>
+
+  <!-- Google Fonts: Playfair Display for refined luxury headings & Plus Jakarta Sans for crisp UI/pricing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Official Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#0B2545',
+              light: '#133763',
+              dark: '#071A33'
+            },
+            tealbrand: {
+              DEFAULT: '#0E7490',
+              light: '#158FAD',
+              soft: '#ECFEFF'
+            },
+            gold: {
+              DEFAULT: '#C89B54',
+              light: '#DFBA78',
+              soft: '#FDF8EE'
+            },
+            slatebg: '#F8FAFC',
+            borderlight: '#E2E8F0'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            card: '0 1px 3px 0 rgba(11, 37, 69, 0.06), 0 1px 2px -1px rgba(11, 37, 69, 0.04)',
+            'card-hover': '0 10px 25px -5px rgba(11, 37, 69, 0.10), 0 4px 10px -6px rgba(11, 37, 69, 0.06)',
+            floating: '0 14px 32px -8px rgba(11, 37, 69, 0.14), 0 4px 12px -4px rgba(11, 37, 69, 0.06)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Minimal Custom CSS Variables & Restrained Transitions (150-200ms) -->
+  <style>
+    :root {
+      --color-navy: #0B2545;
+      --color-teal: #0E7490;
+      --color-gold: #C89B54;
+      --color-surface: #FFFFFF;
+      --color-bg: #F8FAFC;
+      --color-border: #E2E8F0;
+      --transition-fast: 175ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    body {
+      background-color: var(--color-bg);
+      color: #0F172A;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Crisp tabular numerals for hotel rates, GST, and ratings */
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Subtle hover transition for gallery tiles & cards */
+    .subtle-transition {
+      transition: background-color var(--transition-fast),
+                  border-color var(--transition-fast),
+                  color var(--transition-fast),
+                  box-shadow var(--transition-fast),
+                  transform var(--transition-fast),
+                  opacity var(--transition-fast);
+    }
+
+    /* Fallback surface gradient while high-res images load */
+    .img-placeholder-bg {
+      background: linear-gradient(135deg, #0B2545 0%, #164E63 100%);
+    }
+
+    /* Authentic Indian FSSAI Veg / Non-Veg Mark styling */
+    .fssai-veg {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid #15803D;
+      border-radius: 4px;
+      background-color: #FFFFFF;
+      flex-shrink: 0;
+    }
+    .fssai-veg::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 9999px;
+      background-color: #15803D;
+    }
+
+    .fssai-nonveg {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid #B91C1C;
+      border-radius: 4px;
+      background-color: #FFFFFF;
+      flex-shrink: 0;
+    }
+    .fssai-nonveg::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 4.5px solid transparent;
+      border-right: 4.5px solid transparent;
+      border-bottom: 8px solid #B91C1C;
+    }
+
+    /* Accessible focus ring */
+    :focus-visible {
+      outline: 2px solid var(--color-teal);
+      outline-offset: 2px;
+    }
+
+    /* Hide scrollbar cleanly on horizontal pill containers */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-slatebg text-slate-900 selection:bg-tealbrand/15 selection:text-navy">
+
+  <!-- Skip to Main Content Link for Keyboard Accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-navy focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold">
+    Skip to main content
+  </a>
+
+  <!-- ===================================================================== -->
+  <!-- 1. STICKY TOP HEADER                                                  -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-borderlight">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-[72px] gap-4">
+
+        <!-- Brand Logo: Inline SVG Water-Ripple + Brand Title -->
+        <a href="#top" class="flex items-center gap-3 group shrink-0" aria-label="Jaltarang Hotel Home">
+          <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center shadow-sm subtle-transition group-hover:bg-navy-light">
+            <!-- Water-ripple SVG emblem -->
+            <svg class="w-6 h-6 text-gold" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="10" r="3.2" fill="currentColor" opacity="0.95" />
+              <path d="M4.5 16.5C7 14.3 10.2 14.3 14 16.5C17.8 18.7 21 18.7 23.5 16.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+              <path d="M6.5 21C8.8 19.2 11.4 19.2 14 21C16.6 22.8 19.2 22.8 21.5 21" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="leading-tight">
+            <span class="block font-display text-lg sm:text-xl font-bold tracking-tight text-navy">Jaltarang Hotel</span>
+            <span class="block text-[11px] font-semibold uppercase tracking-[0.16em] text-tealbrand">Resort &amp; Stay</span>
+          </div>
+        </a>
+
+        <!-- Primary Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-1" aria-label="Primary Navigation">
+          <a href="#overview" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-navy hover:bg-slate-100 subtle-transition">Overview</a>
+          <a href="#rooms" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-navy hover:bg-slate-100 subtle-transition">Rooms</a>
+          <a href="#dining" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-navy hover:bg-slate-100 subtle-transition">Dining</a>
+          <a href="#amenities" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-navy hover:bg-slate-100 subtle-transition">Amenities</a>
+          <a href="#reviews" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-navy hover:bg-slate-100 subtle-transition">Reviews</a>
+          <a href="#policies" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-navy hover:bg-slate-100 subtle-transition">Policies</a>
+        </nav>
+
+        <!-- Right Side Utilities: INR Badge, Phone CTA, Book Now Button & Mobile Trigger -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- INR Currency Badge -->
+          <span class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-100 border border-borderlight text-xs font-semibold text-navy tabular-nums" title="All prices displayed in Indian Rupees">
+            <span>INR</span>
+            <span class="text-tealbrand">₹</span>
+          </span>
+
+          <!-- Direct Phone CTA -->
+          <a href="tel:+912162248900" class="hidden md:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-slate-700 hover:text-navy hover:bg-slate-100 subtle-transition" aria-label="Call Jaltarang Hotel Reception">
+            <svg class="w-4 h-4 text-tealbrand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span class="tabular-nums">+91 2162 248 900</span>
+          </a>
+
+          <!-- Book Now Primary Button -->
+          <a href="#rooms" class="inline-flex items-center justify-center px-4 sm:px-5 py-2.5 rounded-xl bg-navy hover:bg-navy-light text-white text-sm font-semibold shadow-sm subtle-transition">
+            Book Now
+          </a>
+
+          <!-- Mobile Drawer Hamburger Button -->
+          <button type="button" id="mobileMenuBtn" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-borderlight text-navy hover:bg-slate-100 subtle-transition" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobileDrawerBackdrop" class="fixed inset-0 z-50 bg-navy/50 backdrop-blur-xs hidden" aria-hidden="true"></div>
+  <aside id="mobileDrawer" class="fixed top-0 right-0 z-50 h-full w-72 max-w-[85vw] bg-white shadow-2xl border-l border-borderlight transform translate-x-full subtle-transition flex flex-col" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="flex items-center justify-between px-5 h-16 border-b border-borderlight">
+      <span class="font-display font-bold text-lg text-navy">Jaltarang Hotel</span>
+      <button type="button" id="mobileCloseBtn" class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-500 hover:bg-slate-100 hover:text-navy subtle-transition" aria-label="Close navigation menu">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <nav class="flex-1 px-4 py-5 space-y-1 overflow-y-auto" aria-label="Mobile Links">
+      <a href="#overview" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-navy subtle-transition">Overview</a>
+      <a href="#rooms" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-navy subtle-transition">Rooms &amp; Suites</a>
+      <a href="#dining" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-navy subtle-transition">Dining (Veg &amp; Non-Veg)</a>
+      <a href="#amenities" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-navy subtle-transition">Amenities &amp; Safety</a>
+      <a href="#reviews" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-navy subtle-transition">Guest Reviews</a>
+      <a href="#policies" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-navy subtle-transition">Policies &amp; FAQ</a>
+    </nav>
+    <div class="p-5 border-t border-borderlight bg-slatebg space-y-3">
+      <div class="flex items-center justify-between text-xs font-semibold text-slate-600">
+        <span>Currency</span>
+        <span class="px-2 py-0.5 rounded bg-white border border-borderlight text-navy">INR (₹)</span>
+      </div>
+      <a href="tel:+912162248900" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl border border-borderlight bg-white text-sm font-semibold text-navy hover:bg-slate-50 subtle-transition">
+        <span>Call +91 2162 248 900</span>
+      </a>
+      <a href="#rooms" class="mobile-nav-link flex items-center justify-center w-full py-3 rounded-xl bg-navy text-white text-sm font-semibold hover:bg-navy-light subtle-transition">
+        Reserve Your Stay
+      </a>
+    </div>
+  </aside>
+
+  <!-- ===================================================================== -->
+  <!-- MAIN CONTENT                                                          -->
+  <!-- ===================================================================== -->
+  <main id="main-content">
+
+    <!-- =================================================================== -->
+    <!-- 2. HERO PROPERTY HEADER & 5-PHOTO BENTO GALLERY                     -->
+    <!-- =================================================================== -->
+    <section id="top" class="pt-5 sm:pt-7 pb-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Breadcrumb & Trust Strip -->
+        <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 mb-3">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span>India</span>
+            <span aria-hidden="true">/</span>
+            <span>Maharashtra</span>
+            <span aria-hidden="true">/</span>
+            <span>Sahyadri Valley</span>
+            <span aria-hidden="true">/</span>
+            <span class="font-semibold text-navy">Jaltarang Hotel &amp; Lakeside Resort</span>
+          </div>
+          <span class="inline-flex items-center gap-1.5 text-emerald-700 font-semibold">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            Best Direct Rate Guaranteed
+          </span>
+        </div>
+
+        <!-- Property Title Header (Booking.com / MakeMyTrip Style) -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-5">
+          <div class="space-y-2">
+            <!-- Badges Row: 5 Gold Stars + Verified Resort + Pure Veg & Non-Veg Kitchens -->
+            <div class="flex flex-wrap items-center gap-2">
+              <div class="inline-flex items-center gap-0.5 text-gold" aria-label="5-star luxury resort">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z" /></svg>
+              </div>
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tealbrand-soft text-tealbrand text-xs font-semibold border border-tealbrand/20">
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="10" /></svg>
+                Verified Resort
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold-soft text-navy text-xs font-semibold border border-gold/30">
+                Separate Veg &amp; Non-Veg Kitchens
+              </span>
+            </div>
+
+            <!-- Main H1 Property Name -->
+            <h1 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-navy tracking-tight">
+              Jaltarang Hotel &amp; Lakeside Resort
+            </h1>
+
+            <!-- Scenic Location -->
+            <p class="flex items-center gap-1.5 text-sm text-slate-600">
+              <svg class="w-4 h-4 text-tealbrand shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Lakefront Drive, Sahyadri Valley, Maharashtra 415002</span>
+              <span class="hidden sm:inline text-slate-300">•</span>
+              <a href="#overview" class="hidden sm:inline text-tealbrand font-semibold hover:underline">Excellent lakeside location — 9.4</a>
+            </p>
+          </div>
+
+          <!-- Right Actions: Rating Box + Wishlist + Share -->
+          <div class="flex flex-wrap items-center gap-3">
+            <!-- Booking.com Style Rating Pill -->
+            <a href="#reviews" class="flex items-center gap-2.5 bg-white border border-borderlight rounded-xl px-3.5 py-2 shadow-card hover:border-tealbrand/40 subtle-transition">
+              <div class="text-right leading-tight">
+                <span class="block text-sm font-bold text-navy">Superb</span>
+                <span class="block text-xs text-slate-500 tabular-nums">428 Verified Reviews</span>
+              </div>
+              <div class="w-10 h-10 rounded-lg rounded-bl-none bg-navy text-white font-bold text-base flex items-center justify-center tabular-nums">
+                9.2
+              </div>
+            </a>
+
+            <!-- Save / Wishlist Toggle Button -->
+            <button type="button" id="wishlistBtn" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-white border border-borderlight text-sm font-semibold text-slate-700 hover:border-rose-300 hover:text-rose-600 shadow-card subtle-transition" aria-pressed="false" aria-label="Save property to wishlist">
+              <svg id="wishlistIcon" class="w-4 h-4 subtle-transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+              <span id="wishlistLabel">Save</span>
+            </button>
+
+            <!-- Share Link Button -->
+            <button type="button" id="shareBtn" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-white border border-borderlight text-sm font-semibold text-slate-700 hover:border-tealbrand hover:text-tealbrand shadow-card subtle-transition" aria-label="Copy link to Jaltarang Hotel">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="18" cy="5" r="3" />
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="19" r="3" />
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+              </svg>
+              <span>Share</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5-Photo Bento Grid Gallery (1 Large Feature + 4 Side Tiles) -->
+        <div class="relative grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-2.5 rounded-2xl overflow-hidden bg-slate-200 shadow-card h-[320px] sm:h-[400px] lg:h-[460px]">
+          <!-- Tile 1: Large Feature Image -->
+          <button type="button" data-gallery-index="0" class="gallery-trigger group relative md:col-span-2 md:row-span-2 w-full h-full overflow-hidden img-placeholder-bg text-left focus:z-10" aria-label="Open photo 1: Lakeside Infinity Pool at Jaltarang Hotel">
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80"
+              data-fallback="https://placehold.co/1200x800/0B2545/FFFFFF?text=Jaltarang+Lakeside+Resort"
+              alt="Jaltarang Hotel lakeside luxury infinity pool overlooking the serene valley water"
+              class="w-full h-full object-cover subtle-transition group-hover:scale-[1.02]"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/55 via-transparent to-transparent pointer-events-none"></div>
+            <span class="absolute bottom-3.5 left-4 px-3 py-1 rounded-lg bg-navy/80 backdrop-blur-xs text-white text-xs font-semibold">
+              Lakeside Infinity Pool &amp; Sunset Deck
+            </span>
+          </button>
+
+          <!-- Tile 2: Top Middle -->
+          <button type="button" data-gallery-index="1" class="gallery-trigger group relative hidden md:block w-full h-full overflow-hidden img-placeholder-bg text-left focus:z-10" aria-label="Open photo 2: Premier Lakeview Suite">
+            <img
+              src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80"
+              data-fallback="https://placehold.co/800x600/0E7490/FFFFFF?text=Lakeview+Suite"
+              alt="Premier Lakeview Suite bedroom with warm lighting and king-size bed"
+              class="w-full h-full object-cover subtle-transition group-hover:scale-[1.02]"
+            />
+          </button>
+
+          <!-- Tile 3: Top Right -->
+          <button type="button" data-gallery-index="2" class="gallery-trigger group relative hidden md:block w-full h-full overflow-hidden img-placeholder-bg text-left focus:z-10" aria-label="Open photo 3: Resort Architecture & Courtyard">
+            <img
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
+              data-fallback="https://placehold.co/800x600/0B2545/FFFFFF?text=Resort+Courtyard"
+              alt="Evening view of Jaltarang Hotel illuminated poolside lounge and courtyard"
+              class="w-full h-full object-cover subtle-transition group-hover:scale-[1.02]"
+            />
+          </button>
+
+          <!-- Tile 4: Bottom Middle -->
+          <button type="button" data-gallery-index="3" class="gallery-trigger group relative hidden md:block w-full h-full overflow-hidden img-placeholder-bg text-left focus:z-10" aria-label="Open photo 4: Tarang Kitchen & Grill Dining">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
+              data-fallback="https://placehold.co/800x600/133763/FFFFFF?text=Tarang+Kitchen+Dining"
+              alt="Tarang Kitchen & Grill fine lakeside dining hall"
+              class="w-full h-full object-cover subtle-transition group-hover:scale-[1.02]"
+            />
+          </button>
+
+          <!-- Tile 5: Bottom Right -->
+          <button type="button" data-gallery-index="4" class="gallery-trigger group relative hidden md:block w-full h-full overflow-hidden img-placeholder-bg text-left focus:z-10" aria-label="Open photo 5: Royal Waterfront Presidential Suite">
+            <img
+              src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+              data-fallback="https://placehold.co/800x600/0E7490/FFFFFF?text=Presidential+Suite"
+              alt="Luxury spa bath and bedroom terrace overlooking Sahyadri hills"
+              class="w-full h-full object-cover subtle-transition group-hover:scale-[1.02]"
+            />
+          </button>
+
+          <!-- Floating "View All Photos" Button -->
+          <button type="button" id="viewAllPhotosBtn" class="absolute bottom-3.5 right-3.5 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/95 hover:bg-white text-navy text-xs sm:text-sm font-bold shadow-md border border-borderlight subtle-transition">
+            <svg class="w-4 h-4 text-tealbrand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" rx="1" />
+              <rect x="14" y="3" width="7" height="7" rx="1" />
+              <rect x="14" y="14" width="7" height="7" rx="1" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+            </svg>
+            <span>View all photos (8)</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 3. FLOATING AVAILABILITY & SEARCH BAR (INTERACTIVE)                 -->
+    <!-- =================================================================== -->
+    <section class="relative z-20 -mt-2 pb-10" aria-label="Check Room Availability">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <form id="availabilityForm" class="bg-white rounded-2xl border border-gold/40 shadow-floating p-4 sm:p-5" novalidate>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3.5 items-end">
+
+            <!-- Check-in Date -->
+            <div class="lg:col-span-2">
+              <label for="searchCheckIn" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Check-in</label>
+              <input type="date" id="searchCheckIn" name="checkIn" required class="w-full px-3 py-2.5 rounded-xl border border-borderlight bg-slatebg text-sm font-semibold text-navy focus:bg-white focus:border-tealbrand tabular-nums subtle-transition" />
+            </div>
+
+            <!-- Check-out Date -->
+            <div class="lg:col-span-2">
+              <label for="searchCheckOut" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Check-out</label>
+              <input type="date" id="searchCheckOut" name="checkOut" required class="w-full px-3 py-2.5 rounded-xl border border-borderlight bg-slatebg text-sm font-semibold text-navy focus:bg-white focus:border-tealbrand tabular-nums subtle-transition" />
+            </div>
+
+            <!-- Guests Selector -->
+            <div class="lg:col-span-2">
+              <label for="searchGuests" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Guests</label>
+              <select id="searchGuests" name="guests" class="w-full px-3 py-2.5 rounded-xl border border-borderlight bg-slatebg text-sm font-semibold text-navy focus:bg-white focus:border-tealbrand subtle-transition">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+              </select>
+            </div>
+
+            <!-- Rooms Selector -->
+            <div class="lg:col-span-2">
+              <label for="searchRooms" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Rooms</label>
+              <select id="searchRooms" name="rooms" class="w-full px-3 py-2.5 rounded-xl border border-borderlight bg-slatebg text-sm font-semibold text-navy focus:bg-white focus:border-tealbrand subtle-transition">
+                <option value="1" selected>1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+              </select>
+            </div>
+
+            <!-- Meal Preference Filter -->
+            <div class="lg:col-span-2">
+              <label for="searchMeal" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Meal Preference</label>
+              <select id="searchMeal" name="mealPreference" class="w-full px-3 py-2.5 rounded-xl border border-borderlight bg-slatebg text-sm font-semibold text-navy focus:bg-white focus:border-tealbrand subtle-transition">
+                <option value="all" selected>All Plans</option>
+                <option value="breakfast">Breakfast Included</option>
+                <option value="veg">Pure Veg Only</option>
+                <option value="both">Veg &amp; Non-Veg</option>
+              </select>
+            </div>
+
+            <!-- Check Availability Button -->
+            <div class="sm:col-span-2 lg:col-span-2">
+              <button type="submit" class="w-full py-2.5 px-4 rounded-xl bg-tealbrand hover:bg-tealbrand-light text-white text-sm font-bold shadow-sm subtle-transition flex items-center justify-center gap-2 h-[42px]">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <span>Check Availability</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Dynamic Live Stay Summary Strip -->
+          <div class="mt-3 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600">
+            <p id="searchSummaryText" class="font-medium text-slate-700 tabular-nums"></p>
+            <span class="inline-flex items-center gap-1.5 text-emerald-700 font-semibold">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+              Free Cancellation &amp; Pay at Property Available
+            </span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 4. OVERVIEW & PROPERTY HIGHLIGHTS SPLIT SECTION                     -->
+    <!-- =================================================================== -->
+    <section id="overview" class="py-10 lg:py-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+          <!-- Left Column: Resort Story & Quick-Scan Facility Badges -->
+          <div class="lg:col-span-8 space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-[0.16em] text-tealbrand">Welcome to Tranquility</span>
+              <h2 class="mt-1 font-display text-2xl sm:text-3xl font-bold text-navy">
+                Serene Lakeside Hospitality in the Heart of Sahyadri Valley
+              </h2>
+            </div>
+
+            <div class="space-y-4 text-slate-600 text-[15px] leading-relaxed">
+              <p>
+                Nestled directly along the calm waters of Lakefront Drive, <strong class="text-navy font-semibold">Jaltarang Hotel &amp; Lakeside Resort</strong> blends contemporary architectural warmth with timeless Indian hospitality. Designed for couples, families, and discerning weekend travelers, every room is oriented to capture crisp valley breezes, manicured tropical gardens, or uninterrupted lakefront sunsets.
+              </p>
+              <p>
+                Our signature dining venue, <strong class="text-navy font-semibold">Tarang Kitchen &amp; Grill</strong>, proudly operates <strong class="text-navy font-semibold">completely separate kitchens, preparation counters, and utensils for Pure Veg and Non-Veg culinary traditions</strong>—giving every guest complete peace of mind alongside fresh regional Maharashtrian, North Indian, and coastal specialties.
+              </p>
+            </div>
+
+            <!-- Quick-Scan Facility Badges -->
+            <div>
+              <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-3.5">Most Popular Facilities</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-borderlight shadow-card">
+                  <span class="w-9 h-9 rounded-lg bg-tealbrand-soft text-tealbrand flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0" /><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0" /><circle cx="12" cy="7" r="2" /></svg>
+                  </span>
+                  <span class="text-xs sm:text-sm font-semibold text-navy">Infinity Pool</span>
+                </div>
+
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-borderlight shadow-card">
+                  <span class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /><path d="M7 2v20" /><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg>
+                  </span>
+                  <span class="text-xs sm:text-sm font-semibold text-navy">Veg &amp; Non-Veg Dining</span>
+                </div>
+
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-borderlight shadow-card">
+                  <span class="w-9 h-9 rounded-lg bg-tealbrand-soft text-tealbrand flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0" /><path d="M1.42 9a16 16 0 0 1 21.16 0" /><path d="M8.53 16.11a6 6 0 0 1 6.95 0" /><line x1="12" y1="20" x2="12.01" y2="20" /></svg>
+                  </span>
+                  <span class="text-xs sm:text-sm font-semibold text-navy">Free High-Speed Wi-Fi</span>
+                </div>
+
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-borderlight shadow-card">
+                  <span class="w-9 h-9 rounded-lg bg-slate-100 text-navy flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" /><path d="M9 17V7h4a3 3 0 0 1 0 6H9" /></svg>
+                  </span>
+                  <span class="text-xs sm:text-sm font-semibold text-navy">Free Private Parking</span>
+                </div>
+
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-borderlight shadow-card">
+                  <span class="w-9 h-9 rounded-lg bg-gold-soft text-gold flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>
+                  </span>
+                  <span class="text-xs sm:text-sm font-semibold text-navy">24/7 Security &amp; CCTV</span>
+                </div>
+
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-borderlight shadow-card">
+                  <span class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><path d="m9 14 2 2 4-4" /></svg>
+                  </span>
+                  <span class="text-xs sm:text-sm font-semibold text-navy">Free Cancellation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Booking.com Style "Property Highlights" Trust Card -->
+          <aside class="lg:col-span-4 bg-white rounded-2xl border border-tealbrand/25 shadow-card p-6 space-y-5">
+            <div class="flex items-center justify-between border-b border-borderlight pb-4">
+              <h3 class="font-display text-xl font-bold text-navy">Property Highlights</h3>
+              <span class="px-2.5 py-1 rounded-lg bg-gold-soft text-navy text-xs font-bold border border-gold/30">Top Rated</span>
+            </div>
+
+            <ul class="space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 w-6 h-6 rounded-full bg-tealbrand-soft text-tealbrand flex items-center justify-center shrink-0">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+                </span>
+                <div>
+                  <span class="block font-bold text-navy">Top Location: Rated 9.4 / 10</span>
+                  <span class="text-xs text-slate-500">Direct lakefront promenade with panoramic Sahyadri views.</span>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 w-6 h-6 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                </span>
+                <div>
+                  <span class="block font-bold text-navy">Veg &amp; Non-Veg Buffet Breakfast</span>
+                  <span class="text-xs text-slate-500">Prepared in strictly separated kitchens with fresh local produce.</span>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 w-6 h-6 rounded-full bg-gold-soft text-gold flex items-center justify-center shrink-0">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2" /><line x1="2" y1="10" x2="22" y2="10" /></svg>
+                </span>
+                <div>
+                  <span class="block font-bold text-navy">Pay at Property Available</span>
+                  <span class="text-xs text-slate-500">Reserve online today with zero prepayment required.</span>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 w-6 h-6 rounded-full bg-slate-100 text-navy flex items-center justify-center shrink-0">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+                </span>
+                <div>
+                  <span class="block font-bold text-navy">Family-Friendly &amp; Couple-Safe</span>
+                  <span class="text-xs text-slate-500">24-hour front desk, gated parking, and verified guest check-in.</span>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#rooms" class="flex items-center justify-center w-full py-3 px-4 rounded-xl bg-navy hover:bg-navy-light text-white text-sm font-bold shadow-sm subtle-transition">
+              Reserve Your Stay
+            </a>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 5. ROOMS & SUITES LISTING (BOOKING.COM / MAKEMYTRIP CARD UX)        -->
+    <!-- =================================================================== -->
+    <section id="rooms" class="py-12 lg:py-16 bg-white border-y border-borderlight">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.16em] text-tealbrand">Accommodations</span>
+            <h2 class="mt-1 font-display text-2xl sm:text-3xl font-bold text-navy">
+              Choose Your Room or Lakeside Suite
+            </h2>
+            <p class="mt-1 text-sm text-slate-600">
+              Transparent INR pricing with instant availability updates and 12% GST shown upfront.
+            </p>
+          </div>
+
+          <!-- Sort Dropdown -->
+          <div class="flex items-center gap-2.5 shrink-0">
+            <label for="roomSortSelect" class="text-xs font-bold uppercase tracking-wider text-slate-500">Sort by:</label>
+            <select id="roomSortSelect" class="px-3.5 py-2 rounded-xl border border-borderlight bg-slatebg text-sm font-semibold text-navy focus:bg-white focus:border-tealbrand subtle-transition">
+              <option value="recommended" selected>Recommended</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Interactive Filter Pills -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 mb-6" role="tablist" aria-label="Filter rooms by category">
+          <button type="button" data-room-filter="all" class="room-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-navy bg-navy text-white shrink-0 subtle-transition" aria-pressed="true">All Rooms</button>
+          <button type="button" data-room-filter="lake-view" class="room-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-borderlight bg-white text-slate-700 hover:border-navy hover:text-navy shrink-0 subtle-transition" aria-pressed="false">Lake View</button>
+          <button type="button" data-room-filter="family-suite" class="room-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-borderlight bg-white text-slate-700 hover:border-navy hover:text-navy shrink-0 subtle-transition" aria-pressed="false">Family Suite</button>
+          <button type="button" data-room-filter="pool-access" class="room-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-borderlight bg-white text-slate-700 hover:border-navy hover:text-navy shrink-0 subtle-transition" aria-pressed="false">Pool Access</button>
+          <button type="button" data-room-filter="free-cancellation" class="room-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-borderlight bg-white text-slate-700 hover:border-navy hover:text-navy shrink-0 subtle-transition" aria-pressed="false">Free Cancellation</button>
+        </div>
+
+        <!-- Room Cards Container (Rendered cleanly via secure DOM creation in JS) -->
+        <div id="roomsContainer" class="space-y-5" aria-live="polite"></div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 6. DEDICATED DINING SECTION — VEG & NON-VEG OPTIONS                 -->
+    <!-- =================================================================== -->
+    <section id="dining" class="py-12 lg:py-16 bg-slatebg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Dining Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.16em] text-tealbrand">Culinary Excellence</span>
+            <h2 class="mt-1 font-display text-2xl sm:text-3xl font-bold text-navy">
+              Tarang Kitchen &amp; Grill — Veg &amp; Non-Veg Dining
+            </h2>
+            <p class="mt-1 text-sm text-slate-600 max-w-2xl">
+              Savor authentic Maharashtrian thalis, North Indian classics, coastal seafood, and live charcoal grills by the lake.
+            </p>
+          </div>
+
+          <!-- FSSAI Symbol Legend -->
+          <div class="flex items-center gap-4 text-xs font-semibold text-slate-700 bg-white px-4 py-2.5 rounded-xl border border-borderlight shadow-card self-start lg:self-auto">
+            <span class="inline-flex items-center gap-1.5">
+              <span class="fssai-veg" aria-hidden="true"></span>
+              Pure Veg
+            </span>
+            <span class="text-slate-300">|</span>
+            <span class="inline-flex items-center gap-1.5">
+              <span class="fssai-nonveg" aria-hidden="true"></span>
+              Non-Veg
+            </span>
+          </div>
+        </div>
+
+        <!-- Prominent Separate Kitchens Trust Banner -->
+        <div class="mb-7 rounded-2xl bg-navy text-white p-5 sm:p-6 shadow-card flex flex-col md:flex-row md:items-center justify-between gap-4 border border-navy-light">
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-gold/20 border border-gold/40 text-gold flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-white">
+                Separate Kitchens &amp; Utensils for Pure Veg and Non-Veg Preparation
+              </h3>
+              <p class="mt-1 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                At Jaltarang Hotel, we maintain two physically isolated culinary zones with dedicated chefs, cookware, tandoors, and dishwashing stations—ensuring 100% dietary sanctity for vegetarian guests alongside rich non-vegetarian delicacies.
+              </p>
+            </div>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/10 border border-white/15 text-xs font-semibold text-gold shrink-0 self-start md:self-center">
+            FSSAI Hygiene Certified
+          </span>
+        </div>
+
+        <!-- Interactive Dining Filter Tabs -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 mb-6" role="tablist" aria-label="Filter menu dishes">
+          <button type="button" data-menu-filter="all" class="menu-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-navy bg-navy text-white shrink-0 subtle-transition" aria-pressed="true">All Menu (8)</button>
+          <button type="button" data-menu-filter="veg" class="menu-filter-btn inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-borderlight bg-white text-slate-700 hover:border-emerald-700 hover:text-emerald-800 shrink-0 subtle-transition" aria-pressed="false">
+            <span class="fssai-veg" aria-hidden="true"></span>
+            <span>Pure Veg</span>
+          </button>
+          <button type="button" data-menu-filter="nonveg" class="menu-filter-btn inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-borderlight bg-white text-slate-700 hover:border-red-700 hover:text-red-800 shrink-0 subtle-transition" aria-pressed="false">
+            <span class="fssai-nonveg" aria-hidden="true"></span>
+            <span>Non-Veg</span>
+          </button>
+          <button type="button" data-menu-filter="breakfast" class="menu-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-borderlight bg-white text-slate-700 hover:border-navy hover:text-navy shrink-0 subtle-transition" aria-pressed="false">Breakfast &amp; Drinks</button>
+        </div>
+
+        <!-- 8 Menu Cards Grid (Rendered safely via JS) -->
+        <div id="menuContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" aria-live="polite"></div>
+
+        <!-- Dining Hours Bar -->
+        <div class="mt-8 bg-white rounded-2xl border border-borderlight shadow-card p-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-gold-soft text-gold flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
+            </div>
+            <div>
+              <span class="block text-xs font-bold uppercase tracking-wider text-slate-500">Breakfast</span>
+              <span class="block text-sm font-bold text-navy tabular-nums">7:30 – 10:30 AM</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-tealbrand-soft text-tealbrand flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
+            </div>
+            <div>
+              <span class="block text-xs font-bold uppercase tracking-wider text-slate-500">Lunch</span>
+              <span class="block text-sm font-bold text-navy tabular-nums">12:30 – 3:30 PM</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-navy/10 text-navy flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+            </div>
+            <div>
+              <span class="block text-xs font-bold uppercase tracking-wider text-slate-500">Dinner</span>
+              <span class="block text-sm font-bold text-navy tabular-nums">7:30 – 11:00 PM</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1" /><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" /></svg>
+            </div>
+            <div>
+              <span class="block text-xs font-bold uppercase tracking-wider text-slate-500">In-Room Dining</span>
+              <span class="block text-sm font-bold text-navy">24/7 Service</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 7. AMENITIES & SAFETY SECTION                                       -->
+    <!-- =================================================================== -->
+    <section id="amenities" class="py-12 lg:py-16 bg-white border-y border-borderlight">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-8">
+          <span class="text-xs font-bold uppercase tracking-[0.16em] text-tealbrand">Resort Facilities</span>
+          <h2 class="mt-1 font-display text-2xl sm:text-3xl font-bold text-navy">
+            Amenities, Comfort &amp; Guest Safety
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Category 1: Recreation & Pool -->
+          <div class="rounded-2xl border border-borderlight bg-slatebg p-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-xl bg-tealbrand-soft text-tealbrand flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0" /><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0" /></svg>
+              </span>
+              <h3 class="font-display text-lg font-bold text-navy">Recreation &amp; Pool</h3>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-700">
+              <li class="flex items-center gap-2.5"><span class="text-tealbrand font-bold">✓</span> Temperature-Controlled Infinity Pool</li>
+              <li class="flex items-center gap-2.5"><span class="text-tealbrand font-bold">✓</span> Private Lakeside Sunset Deck &amp; Seating</li>
+              <li class="flex items-center gap-2.5"><span class="text-tealbrand font-bold">✓</span> Dedicated Kids Splash Zone &amp; Lawn</li>
+              <li class="flex items-center gap-2.5"><span class="text-tealbrand font-bold">✓</span> Indoor Games Lounge (Carrom, Chess, Table Tennis)</li>
+              <li class="flex items-center gap-2.5"><span class="text-tealbrand font-bold">✓</span> Guided Morning Nature &amp; Lakefront Walks</li>
+              <li class="flex items-center gap-2.5"><span class="text-tealbrand font-bold">✓</span> Bonfire Courtyard (Seasonal Evenings)</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Food & Dining -->
+          <div class="rounded-2xl border border-borderlight bg-slatebg p-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /><path d="M7 2v20" /><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7" /></svg>
+              </span>
+              <h3 class="font-display text-lg font-bold text-navy">Food &amp; Dining</h3>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-700">
+              <li class="flex items-center gap-2.5"><span class="text-emerald-700 font-bold">✓</span> 100% Separate Pure Veg &amp; Non-Veg Kitchens</li>
+              <li class="flex items-center gap-2.5"><span class="text-emerald-700 font-bold">✓</span> Daily Multi-Cuisine Buffet Breakfast</li>
+              <li class="flex items-center gap-2.5"><span class="text-emerald-700 font-bold">✓</span> Lakeview Open-Air Deck Dining</li>
+              <li class="flex items-center gap-2.5"><span class="text-emerald-700 font-bold">✓</span> Jain &amp; Kid-Friendly Meals on Request</li>
+              <li class="flex items-center gap-2.5"><span class="text-emerald-700 font-bold">✓</span> 24/7 In-Room Dining Service</li>
+              <li class="flex items-center gap-2.5"><span class="text-emerald-700 font-bold">✓</span> Freshly Brewed Filter Coffee &amp; Chai Bar</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Safety & Room Comforts -->
+          <div class="rounded-2xl border border-borderlight bg-slatebg p-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-xl bg-gold-soft text-gold flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>
+              </span>
+              <h3 class="font-display text-lg font-bold text-navy">Safety &amp; Room Comforts</h3>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-700">
+              <li class="flex items-center gap-2.5"><span class="text-navy font-bold">✓</span> 24/7 Trained Security &amp; Perimeter CCTV</li>
+              <li class="flex items-center gap-2.5"><span class="text-navy font-bold">✓</span> Electronic Keycard Access &amp; In-Room Safe</li>
+              <li class="flex items-center gap-2.5"><span class="text-navy font-bold">✓</span> 100% Power Backup &amp; High-Speed Fiber Wi-Fi</li>
+              <li class="flex items-center gap-2.5"><span class="text-navy font-bold">✓</span> Doctor on Call &amp; First-Aid Response</li>
+              <li class="flex items-center gap-2.5"><span class="text-navy font-bold">✓</span> Silent Split AC, Rain Shower &amp; Premium Linen</li>
+              <li class="flex items-center gap-2.5"><span class="text-navy font-bold">✓</span> Complimentary Valet &amp; EV Charging Bay</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 8. GUEST REVIEWS & CATEGORY RATINGS (BOOKING.COM STYLE)             -->
+    <!-- =================================================================== -->
+    <section id="reviews" class="py-12 lg:py-16 bg-slatebg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="mb-8">
+          <span class="text-xs font-bold uppercase tracking-[0.16em] text-tealbrand">Verified Guest Feedback</span>
+          <h2 class="mt-1 font-display text-2xl sm:text-3xl font-bold text-navy">
+            Guest Reviews &amp; Ratings
+          </h2>
+        </div>
+
+        <!-- Rating Overview Card + 6 Horizontal Progress Bars -->
+        <div class="bg-white rounded-2xl border border-borderlight shadow-card p-6 sm:p-8 mb-7">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+            <!-- Left Score Block -->
+            <div class="lg:col-span-4 flex items-center gap-5 lg:border-r lg:border-borderlight lg:pr-6">
+              <div class="w-20 h-20 rounded-2xl rounded-bl-none bg-navy text-white flex flex-col items-center justify-center shrink-0">
+                <span class="text-3xl font-extrabold leading-none tabular-nums">9.2</span>
+                <span class="text-[10px] uppercase tracking-wider text-gold font-bold mt-1">Out of 10</span>
+              </div>
+              <div>
+                <span class="block font-display text-2xl font-bold text-navy">Superb</span>
+                <p class="text-sm text-slate-600 mt-0.5 tabular-nums">Based on 428 verified stays</p>
+                <span class="inline-flex items-center gap-1 mt-2 text-xs font-semibold text-emerald-700">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  100% Real Guest Reviews
+                </span>
+              </div>
+            </div>
+
+            <!-- Right 6 Category Progress Bars -->
+            <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-navy mb-1.5">
+                  <span>Cleanliness</span>
+                  <span class="tabular-nums">9.5</span>
+                </div>
+                <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full rounded-full bg-navy" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-navy mb-1.5">
+                  <span>Food (Veg &amp; Non-Veg)</span>
+                  <span class="tabular-nums">9.4</span>
+                </div>
+                <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full rounded-full bg-tealbrand" style="width: 94%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-navy mb-1.5">
+                  <span>Staff &amp; Hospitality</span>
+                  <span class="tabular-nums">9.6</span>
+                </div>
+                <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full rounded-full bg-navy" style="width: 96%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-navy mb-1.5">
+                  <span>Comfort &amp; Rooms</span>
+                  <span class="tabular-nums">9.1</span>
+                </div>
+                <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full rounded-full bg-tealbrand" style="width: 91%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-navy mb-1.5">
+                  <span>Lakeside Location</span>
+                  <span class="tabular-nums">9.3</span>
+                </div>
+                <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full rounded-full bg-navy" style="width: 93%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-navy mb-1.5">
+                  <span>Value for Money</span>
+                  <span class="tabular-nums">8.9</span>
+                </div>
+                <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full rounded-full bg-gold" style="width: 89%;"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3 Verified Guest Review Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Review 1 -->
+          <article class="bg-white rounded-2xl border border-borderlight shadow-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-3 mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-navy text-white text-sm font-bold flex items-center justify-center shrink-0">AD</div>
+                  <div>
+                    <h3 class="text-sm font-bold text-navy">Ananya Deshmukh</h3>
+                    <span class="text-xs text-slate-500">Pune • Couple Stay</span>
+                  </div>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-navy text-white text-xs font-bold tabular-nums">9.6</span>
+              </div>
+              <h4 class="text-sm font-bold text-navy mb-2">“Peaceful lake view and truly spotless rooms”</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                We booked the Premier Lakeview Balcony Room for our anniversary. Waking up to mist over the lake was unforgettable. My husband prefers Pure Veg while I enjoy coastal seafood—having completely separate kitchens meant both of us loved every single meal!
+              </p>
+            </div>
+            <div class="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span>Stayed Oct 2026</span>
+              <span class="font-semibold text-tealbrand">Verified Stay</span>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="bg-white rounded-2xl border border-borderlight shadow-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-3 mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-tealbrand text-white text-sm font-bold flex items-center justify-center shrink-0">RK</div>
+                  <div>
+                    <h3 class="text-sm font-bold text-navy">Rajesh Kulkarni</h3>
+                    <span class="text-xs text-slate-500">Mumbai • Family Vacation</span>
+                  </div>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-navy text-white text-xs font-bold tabular-nums">9.4</span>
+              </div>
+              <h4 class="text-sm font-bold text-navy mb-2">“Spacious Family Suite &amp; exceptional warmth”</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Traveled with my parents and two kids in the Executive Family Suite. The 2-bedroom layout felt just like a private home. The staff arranged fresh Traditional Veg Thalis for my parents and Grilled Tandoori Prawns for us without any delay. Highly recommend.
+              </p>
+            </div>
+            <div class="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span>Stayed Sep 2026</span>
+              <span class="font-semibold text-tealbrand">Verified Stay</span>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="bg-white rounded-2xl border border-borderlight shadow-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-3 mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-gold text-navy text-sm font-bold flex items-center justify-center shrink-0">SM</div>
+                  <div>
+                    <h3 class="text-sm font-bold text-navy">Siddharth Menon</h3>
+                    <span class="text-xs text-slate-500">Bengaluru • Solo / Workation</span>
+                  </div>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-navy text-white text-xs font-bold tabular-nums">9.0</span>
+              </div>
+              <h4 class="text-sm font-bold text-navy mb-2">“Fast Wi-Fi, calm ambience, zero hassle”</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Spent three weekdays working remotely from the Pool-Access Villa. Fiber Wi-Fi never dropped during video calls, check-in was quick with pay-at-property convenience, and evening swims overlooking the Sahyadri hills recharged me completely.
+              </p>
+            </div>
+            <div class="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span>Stayed Nov 2026</span>
+              <span class="font-semibold text-tealbrand">Verified Stay</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 9. HOUSE RULES, POLICIES & INTERACTIVE FAQ ACCORDION                -->
+    <!-- =================================================================== -->
+    <section id="policies" class="py-12 lg:py-16 bg-white border-t border-borderlight">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+          <!-- Left: House Rules & Policies -->
+          <div class="lg:col-span-6 space-y-5">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-[0.16em] text-tealbrand">Good to Know</span>
+              <h2 class="mt-1 font-display text-2xl sm:text-3xl font-bold text-navy">
+                House Rules &amp; Stay Policies
+              </h2>
+            </div>
+
+            <div class="rounded-2xl border border-borderlight overflow-hidden divide-y divide-borderlight bg-slatebg">
+              <div class="p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <span class="text-sm font-bold text-navy">Check-in</span>
+                <span class="sm:col-span-2 text-sm text-slate-700">From <strong class="text-navy">1:00 PM</strong> onwards (Early check-in subject to availability)</span>
+              </div>
+
+              <div class="p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <span class="text-sm font-bold text-navy">Check-out</span>
+                <span class="sm:col-span-2 text-sm text-slate-700">Until <strong class="text-navy">11:00 AM</strong></span>
+              </div>
+
+              <div class="p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <span class="text-sm font-bold text-navy">Cancellation Policy</span>
+                <span class="sm:col-span-2 text-sm text-slate-700">
+                  <strong class="text-emerald-700">Free Cancellation</strong> up to 48 hours prior to check-in. Cancellations within 48 hours incur a 1-night stay charge.
+                </span>
+              </div>
+
+              <div class="p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <span class="text-sm font-bold text-navy">Guest ID Rules</span>
+                <span class="sm:col-span-2 text-sm text-slate-700">Valid Government-issued photo ID (Aadhaar Card, Passport, or Driving License) is mandatory for all adult guests upon arrival.</span>
+              </div>
+
+              <div class="p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <span class="text-sm font-bold text-navy">Veg &amp; Non-Veg Dining</span>
+                <span class="sm:col-span-2 text-sm text-slate-700">Both Pure Veg and Non-Veg meals are prepared in strictly separate kitchens. Outside food is not permitted in dining halls.</span>
+              </div>
+
+              <div class="p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <span class="text-sm font-bold text-navy">Payment at Property</span>
+                <span class="sm:col-span-2 text-sm text-slate-700">UPI, RuPay, Visa, Mastercard, and Cash accepted at reception. No online card details needed to reserve.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive FAQ Accordion (4 Expandable Items) -->
+          <div class="lg:col-span-6 space-y-5">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-[0.16em] text-tealbrand">Frequently Asked Questions</span>
+              <h2 class="mt-1 font-display text-2xl sm:text-3xl font-bold text-navy">
+                Quick Answers Before You Book
+              </h2>
+            </div>
+
+            <div class="space-y-3" id="faqAccordion">
+
+              <!-- FAQ 1 -->
+              <div class="rounded-2xl border border-borderlight bg-white overflow-hidden">
+                <button type="button" class="faq-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 hover:bg-slatebg subtle-transition" aria-expanded="true" aria-controls="faq-panel-1">
+                  <span class="text-sm sm:text-base font-bold text-navy">Are Pure Veg and Non-Veg dishes really cooked in separate kitchens?</span>
+                  <svg class="faq-chevron w-5 h-5 text-tealbrand shrink-0 rotate-180 subtle-transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                </button>
+                <div id="faq-panel-1" class="faq-panel px-5 pb-4 text-sm text-slate-600 leading-relaxed">
+                  Yes. Tarang Kitchen &amp; Grill operates two completely partitioned kitchens with independent cooking vessels, tandoors, refrigeration, and plating utensils. Vegetarian and Jain guests can dine with complete confidence.
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="rounded-2xl border border-borderlight bg-white overflow-hidden">
+                <button type="button" class="faq-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 hover:bg-slatebg subtle-transition" aria-expanded="false" aria-controls="faq-panel-2">
+                  <span class="text-sm sm:text-base font-bold text-navy">Do I need to pay online or enter card details to confirm my room?</span>
+                  <svg class="faq-chevron w-5 h-5 text-tealbrand shrink-0 subtle-transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                </button>
+                <div id="faq-panel-2" class="faq-panel hidden px-5 pb-4 text-sm text-slate-600 leading-relaxed">
+                  No. You can reserve your room directly on this website using our Pay at Property option. You will receive an instant booking reference ID, and you settle your bill via UPI, card, or cash upon check-in at reception.
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="rounded-2xl border border-borderlight bg-white overflow-hidden">
+                <button type="button" class="faq-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 hover:bg-slatebg subtle-transition" aria-expanded="false" aria-controls="faq-panel-3">
+                  <span class="text-sm sm:text-base font-bold text-navy">Is complimentary breakfast included with all room bookings?</span>
+                  <svg class="faq-chevron w-5 h-5 text-tealbrand shrink-0 subtle-transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                </button>
+                <div id="faq-panel-3" class="faq-panel hidden px-5 pb-4 text-sm text-slate-600 leading-relaxed">
+                  Yes, all five room categories at Jaltarang Hotel include our daily lakeside buffet breakfast (7:30 AM – 10:30 AM) featuring South Indian, Maharashtrian, Continental, and live egg/omelette stations in our separate Non-Veg counter.
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="rounded-2xl border border-borderlight bg-white overflow-hidden">
+                <button type="button" class="faq-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 hover:bg-slatebg subtle-transition" aria-expanded="false" aria-controls="faq-panel-4">
+                  <span class="text-sm sm:text-base font-bold text-navy">Is free private parking and driver accommodation available?</span>
+                  <svg class="faq-chevron w-5 h-5 text-tealbrand shrink-0 subtle-transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                </button>
+                <div id="faq-panel-4" class="faq-panel hidden px-5 pb-4 text-sm text-slate-600 leading-relaxed">
+                  Complimentary gated parking with 24/7 CCTV surveillance and two EV charging points is available on-site. Driver rest rooms can also be arranged on prior request at a nominal charge.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER                                                                -->
+  <!-- ===================================================================== -->
+  <footer class="bg-navy text-slate-300 pt-14 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-white/10">
+
+        <!-- Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center">
+              <svg class="w-6 h-6 text-gold" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <circle cx="14" cy="10" r="3.2" fill="currentColor" />
+                <path d="M4.5 16.5C7 14.3 10.2 14.3 14 16.5C17.8 18.7 21 18.7 23.5 16.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+                <path d="M6.5 21C8.8 19.2 11.4 19.2 14 21C16.6 22.8 19.2 22.8 21.5 21" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div>
+              <span class="block font-display text-lg font-bold text-white">Jaltarang Hotel</span>
+              <span class="block text-[11px] uppercase tracking-[0.16em] text-gold font-semibold">Lakeside Resort &amp; Stay</span>
+            </div>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            A serene waterfront retreat in Sahyadri Valley offering bespoke lakeside suites, infinity pool tranquility, and dedicated Pure Veg &amp; Non-Veg culinary craft.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Explore Resort</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#overview" class="hover:text-white subtle-transition">Property Overview</a></li>
+            <li><a href="#rooms" class="hover:text-white subtle-transition">Rooms &amp; Lakeside Suites</a></li>
+            <li><a href="#dining" class="hover:text-white subtle-transition">Tarang Kitchen (Veg &amp; Non-Veg)</a></li>
+            <li><a href="#amenities" class="hover:text-white subtle-transition">Amenities &amp; Safety</a></li>
+            <li><a href="#reviews" class="hover:text-white subtle-transition">Verified Guest Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Reservations Desk</h3>
+          <ul class="space-y-2.5 text-sm text-slate-300">
+            <li>Lakefront Drive, Sahyadri Valley, Maharashtra 415002, India</li>
+            <li>Phone: <a href="tel:+912162248900" class="text-white font-semibold hover:text-gold subtle-transition tabular-nums">+91 2162 248 900</a></li>
+            <li>Email: <a href="mailto:stay@jaltaranghotel.in" class="text-white font-semibold hover:text-gold subtle-transition">stay@jaltaranghotel.in</a></li>
+            <li class="text-xs text-slate-400">24/7 Front Desk &amp; Concierge Support</li>
+          </ul>
+        </div>
+
+        <!-- Trust Assurance -->
+        <div class="space-y-3">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Direct Booking Assurance</h3>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2 text-xs">
+            <p class="font-semibold text-white">Pay at Property • Zero Hidden Fees</p>
+            <p class="text-slate-400 leading-relaxed">
+              Your reservation request is validated safely on the client with no credit card data collected online.
+            </p>
+            <span class="inline-block pt-1 text-gold font-semibold">GST Registered Property • INR (₹)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+        <p>&copy; <span id="currentYear">2026</span> Jaltarang Hotel &amp; Lakeside Resort. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#policies" class="hover:text-white subtle-transition">House Rules</a>
+          <a href="#policies" class="hover:text-white subtle-transition">Cancellation Policy</a>
+          <a href="#dining" class="hover:text-white subtle-transition">FSSAI Dining Standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- LIGHTBOX GALLERY MODAL (KEYBOARD ACCESSIBLE)                          -->
+  <!-- ===================================================================== -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy/95 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption">
+    <div class="relative w-full max-w-5xl mx-auto flex flex-col items-center">
+
+      <!-- Top Bar: Counter & Close -->
+      <div class="w-full flex items-center justify-between text-white mb-3">
+        <span id="lightboxCounter" class="text-sm font-semibold tabular-nums text-slate-200">1 / 8</span>
+        <button type="button" id="lightboxCloseBtn" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-sm font-semibold subtle-transition" aria-label="Close photo gallery">
+          <span>Close</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+        </button>
+      </div>
+
+      <!-- Image Stage + Prev / Next Buttons -->
+      <div class="relative w-full aspect-[16/10] max-h-[72vh] rounded-2xl overflow-hidden bg-navy-dark flex items-center justify-center border border-white/10">
+        <img id="lightboxImage" src="" alt="" class="w-full h-full object-contain" />
+
+        <button type="button" id="lightboxPrevBtn" class="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-navy/80 hover:bg-navy text-white border border-white/20 flex items-center justify-center subtle-transition" aria-label="Previous photo">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><polyline points="15 18 9 12 15 6" /></svg>
+        </button>
+
+        <button type="button" id="lightboxNextBtn" class="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-navy/80 hover:bg-navy text-white border border-white/20 flex items-center justify-center subtle-transition" aria-label="Next photo">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><polyline points="9 18 15 12 9 6" /></svg>
+        </button>
+      </div>
+
+      <!-- Caption -->
+      <p id="lightboxCaption" class="mt-3 text-sm sm:text-base font-medium text-white text-center"></p>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- ROOM DETAILS MODAL                                                    -->
+  <!-- ===================================================================== -->
+  <div id="roomDetailsModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy/65 backdrop-blur-xs p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="detailModalTitle">
+    <div class="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl border border-borderlight overflow-hidden my-auto max-h-[90vh] flex flex-col">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-borderlight">
+        <div>
+          <span id="detailModalBadge" class="inline-block text-[11px] font-bold uppercase tracking-wider text-tealbrand"></span>
+          <h3 id="detailModalTitle" class="font-display text-xl sm:text-2xl font-bold text-navy"></h3>
+        </div>
+        <button type="button" id="closeRoomDetailsBtn" class="w-9 h-9 rounded-xl flex items-center justify-center text-slate-500 hover:bg-slate-100 hover:text-navy subtle-transition" aria-label="Close room details">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="overflow-y-auto p-6 space-y-5">
+        <div class="rounded-xl overflow-hidden aspect-[16/9] img-placeholder-bg">
+          <img id="detailModalImg" src="" alt="" class="w-full h-full object-cover" />
+        </div>
+
+        <p id="detailModalDesc" class="text-sm text-slate-600 leading-relaxed"></p>
+
+        <!-- Key Specs Grid -->
+        <div id="detailModalSpecs" class="grid grid-cols-2 sm:grid-cols-4 gap-3"></div>
+
+        <!-- Room Amenities List -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2.5">Included in Your Room</h4>
+          <ul id="detailModalAmenities" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-700"></ul>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 bg-slatebg border-t border-borderlight flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div>
+          <span id="detailModalPrice" class="block text-xl font-extrabold text-navy tabular-nums"></span>
+          <span id="detailModalTaxNote" class="block text-xs text-slate-500 tabular-nums"></span>
+        </div>
+        <button type="button" id="detailModalSelectBtn" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-navy hover:bg-navy-light text-white text-sm font-bold subtle-transition">
+          Select This Room
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- SECURE INTERACTIVE BOOKING MODAL                                      -->
+  <!-- ===================================================================== -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy/65 backdrop-blur-xs p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="bookingModalHeading">
+    <div class="relative w-full max-w-3xl bg-white rounded-2xl shadow-2xl border border-borderlight overflow-hidden my-auto max-h-[92vh] flex flex-col">
+
+      <!-- Modal Top Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-borderlight bg-white">
+        <div class="flex items-center gap-2.5">
+          <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>
+          </span>
+          <div>
+            <h3 id="bookingModalHeading" class="font-display text-lg sm:text-xl font-bold text-navy">Complete Your Reservation</h3>
+            <p class="text-xs text-slate-500">Pay at Property • Instant Confirmation Reference</p>
+          </div>
+        </div>
+        <button type="button" id="closeBookingModalBtn" class="w-9 h-9 rounded-xl flex items-center justify-center text-slate-500 hover:bg-slate-100 hover:text-navy subtle-transition" aria-label="Close booking form">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+        </button>
+      </div>
+
+      <!-- Scrollable Modal Content -->
+      <div class="overflow-y-auto p-6">
+
+        <!-- STEP 1: RESERVATION FORM + LIVE ITEMIZED BREAKDOWN -->
+        <div id="bookingFormView" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+          <!-- Left: Guest Information Form -->
+          <form id="guestBookingForm" class="lg:col-span-7 space-y-4" novalidate>
+            <div>
+              <label for="guestFullName" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Full Name <span class="text-red-600">*</span></label>
+              <input type="text" id="guestFullName" name="fullName" required minlength="2" maxlength="80" autocomplete="name" placeholder="e.g., Aarav Sharma" class="w-full px-3.5 py-2.5 rounded-xl border border-borderlight bg-slatebg text-sm font-medium text-navy focus:bg-white focus:border-tealbrand subtle-transition" />
+              <p id="errFullName" class="mt-1 text-xs font-medium text-red-600 hidden" role="alert"></p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="guestEmail" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Email Address <span class="text-red-600">*</span></label>
+                <input type="email" id="guestEmail" name="email" required maxlength="120" autocomplete="email" placeholder="name@example.com" class="w-full px-3.5 py-2.5 rounded-xl border border-borderlight bg-slatebg text-sm font-medium text-navy focus:bg-white focus:border-tealbrand subtle-transition" />
+                <p id="errEmail" class="mt-1 text-xs font-medium text-red-600 hidden" role="alert"></p>
+              </div>
+
+              <div>
+                <label for="guestPhone" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Indian Mobile (10 digits) <span class="text-red-600">*</span></label>
+                <div class="flex">
+                  <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-borderlight bg-slate-100 text-xs font-bold text-slate-600">+91</span>
+                  <input type="tel" id="guestPhone" name="phone" required inputmode="numeric" maxlength="10" pattern="[6-9][0-9]{9}" autocomplete="tel-national" placeholder="9876543210" class="w-full px-3 py-2.5 rounded-r-xl border border-borderlight bg-slatebg text-sm font-medium text-navy focus:bg-white focus:border-tealbrand tabular-nums subtle-transition" />
+                </div>
+                <p id="errPhone" class="mt-1 text-xs font-medium text-red-600 hidden" role="alert"></p>
+              </div>
+            </div>
+
+            <div>
+              <label for="guestDietary" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Dietary Preference (Separate Kitchens) <span class="text-red-600">*</span></label>
+              <select id="guestDietary" name="dietary" required class="w-full px-3.5 py-2.5 rounded-xl border border-borderlight bg-slatebg text-sm font-semibold text-navy focus:bg-white focus:border-tealbrand subtle-transition">
+                <option value="Pure Veg">Pure Veg (Dedicated Veg Kitchen)</option>
+                <option value="Non-Veg">Non-Veg (Separate Non-Veg Kitchen)</option>
+                <option value="Both Veg & Non-Veg" selected>Both Veg &amp; Non-Veg</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label for="guestRequests" class="block text-xs font-bold uppercase tracking-wider text-slate-600">Special Requests (Optional)</label>
+                <span id="reqCharCount" class="text-[11px] text-slate-400 tabular-nums">0 / 250</span>
+              </div>
+              <textarea id="guestRequests" name="requests" rows="3" maxlength="250" placeholder="e.g., High floor, early check-in, Jain meals, anniversary setup..." class="w-full px-3.5 py-2.5 rounded-xl border border-borderlight bg-slatebg text-sm font-medium text-navy focus:bg-white focus:border-tealbrand subtle-transition resize-none"></textarea>
+            </div>
+
+            <!-- Security Assurance Notice (No card details requested) -->
+            <div class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
+              <span><strong>Pay at Property Guarantee:</strong> No credit/debit card details are required online. Pay safely at reception upon arrival.</span>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 px-5 rounded-xl bg-navy hover:bg-navy-light text-white text-sm font-bold shadow-sm subtle-transition">
+              Confirm Reservation (Pay at Property)
+            </button>
+          </form>
+
+          <!-- Right: Live Itemized Breakdown -->
+          <aside class="lg:col-span-5 bg-slatebg rounded-2xl border border-borderlight p-5 space-y-4 self-start">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-tealbrand">Price &amp; Stay Summary</h4>
+
+            <div class="pb-3.5 border-b border-borderlight">
+              <p id="summaryRoomName" class="font-display text-lg font-bold text-navy"></p>
+              <p id="summaryRoomMeta" class="text-xs text-slate-500 mt-0.5"></p>
+            </div>
+
+            <dl class="space-y-2.5 text-sm">
+              <div class="flex justify-between gap-2">
+                <dt class="text-slate-500">Check-in</dt>
+                <dd id="summaryCheckIn" class="font-semibold text-navy tabular-nums"></dd>
+              </div>
+              <div class="flex justify-between gap-2">
+                <dt class="text-slate-500">Check-out</dt>
+                <dd id="summaryCheckOut" class="font-semibold text-navy tabular-nums"></dd>
+              </div>
+              <div class="flex justify-between gap-2">
+                <dt class="text-slate-500">Stay Duration</dt>
+                <dd id="summaryNightsRooms" class="font-semibold text-navy tabular-nums"></dd>
+              </div>
+              <div class="flex justify-between gap-2">
+                <dt class="text-slate-500">Guests</dt>
+                <dd id="summaryGuests" class="font-semibold text-navy tabular-nums"></dd>
+              </div>
+            </dl>
+
+            <div class="pt-3.5 border-t border-borderlight space-y-2 text-sm tabular-nums">
+              <div class="flex justify-between">
+                <span class="text-slate-600">Room Base Price</span>
+                <span id="summaryBasePrice" class="font-semibold text-navy"></span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-600">Taxes &amp; GST (12%)</span>
+                <span id="summaryGst" class="font-semibold text-navy"></span>
+              </div>
+              <div class="flex justify-between items-baseline pt-2.5 border-t border-borderlight">
+                <span class="font-bold text-navy">Grand Total</span>
+                <span id="summaryGrandTotal" class="text-xl font-extrabold text-tealbrand"></span>
+              </div>
+              <p class="text-[11px] text-emerald-700 font-semibold pt-1">
+                ✓ Complimentary Breakfast &amp; Free Cancellation included
+              </p>
+            </div>
+          </aside>
+
+        </div>
+
+        <!-- STEP 2: RESERVATION CONFIRMATION VIEW (XSS-SAFE DOM TEXT CONTENT) -->
+        <div id="bookingConfirmView" class="hidden max-w-xl mx-auto text-center space-y-5 py-3">
+          <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 mx-auto flex items-center justify-center">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+          </div>
+
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
+              Pay at Property • Confirmed
+            </span>
+            <h4 class="mt-3 font-display text-2xl font-bold text-navy">Reservation Confirmed!</h4>
+            <p class="mt-1 text-sm text-slate-600">
+              We look forward to welcoming you to Jaltarang Hotel &amp; Lakeside Resort.
+            </p>
+          </div>
+
+          <!-- Booking Reference Pill -->
+          <div class="inline-flex flex-wrap items-center justify-center gap-3 px-5 py-3 rounded-2xl bg-navy text-white">
+            <span class="text-xs uppercase tracking-wider text-slate-300">Booking Ref:</span>
+            <strong id="confirmRefId" class="text-lg font-extrabold tracking-wide text-gold tabular-nums"></strong>
+            <button type="button" id="copyRefBtn" class="px-2.5 py-1 rounded-lg bg-white/15 hover:bg-white/25 text-xs font-semibold subtle-transition">
+              Copy
+            </button>
+          </div>
+
+          <!-- Confirmed Details Card -->
+          <div class="text-left bg-slatebg rounded-2xl border border-borderlight p-5 space-y-2.5 text-sm">
+            <div class="flex justify-between gap-4">
+              <span class="text-slate-500">Guest Name</span>
+              <span id="confirmGuestName" class="font-bold text-navy text-right break-words"></span>
+            </div>
+            <div class="flex justify-between gap-4">
+              <span class="text-slate-500">Contact</span>
+              <span id="confirmContact" class="font-semibold text-navy text-right break-all"></span>
+            </div>
+            <div class="flex justify-between gap-4">
+              <span class="text-slate-500">Room Selected</span>
+              <span id="confirmRoom" class="font-bold text-navy text-right"></span>
+            </div>
+            <div class="flex justify-between gap-4">
+              <span class="text-slate-500">Stay Dates</span>
+              <span id="confirmDates" class="font-semibold text-navy text-right tabular-nums"></span>
+            </div>
+            <div class="flex justify-between gap-4">
+              <span class="text-slate-500">Dietary Preference</span>
+              <span id="confirmDietary" class="font-semibold text-tealbrand text-right"></span>
+            </div>
+            <div id="confirmRequestsRow" class="flex justify-between gap-4 hidden">
+              <span class="text-slate-500 shrink-0">Special Requests</span>
+              <span id="confirmRequests" class="font-medium text-slate-700 text-right break-words"></span>
+            </div>
+            <div class="pt-2.5 border-t border-borderlight flex justify-between items-baseline">
+              <span class="font-bold text-navy">Total Payable at Property (incl. 12% GST)</span>
+              <span id="confirmTotal" class="text-lg font-extrabold text-tealbrand tabular-nums"></span>
+            </div>
+          </div>
+
+          <button type="button" id="doneBookingBtn" class="px-7 py-3 rounded-xl bg-navy hover:bg-navy-light text-white text-sm font-bold subtle-transition">
+            Return to Jaltarang Hotel
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- ACCESSIBLE TOAST NOTIFICATION CONTAINER (NO alert() USED)             -->
+  <!-- ===================================================================== -->
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-[60] flex flex-col gap-2 max-w-sm pointer-events-none" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ===================================================================== -->
+  <!-- SECURE MODULAR JAVASCRIPT ('use strict', ZERO INLINE HANDLERS)        -->
+  <!-- ===================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ------------------------------------------------------------------- */
+      /* 1. STATIC DATA MODELS (ROOMS, GALLERY, DINING MENU)                 */
+      /* ------------------------------------------------------------------- */
+      const GST_RATE = 0.12;
+
+      const GALLERY_PHOTOS = [
+        {
+          src: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80',
+          fallback: 'https://placehold.co/1200x800/0B2545/FFFFFF?text=Jaltarang+Infinity+Pool',
+          caption: 'Lakeside Infinity Pool & Sunset Deck — Jaltarang Hotel'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80',
+          fallback: 'https://placehold.co/1200x800/0E7490/FFFFFF?text=Premier+Lakeview+Suite',
+          caption: 'Premier Lakeview Balcony Room with King Bed'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80',
+          fallback: 'https://placehold.co/1200x800/0B2545/FFFFFF?text=Resort+Courtyard+Evening',
+          caption: 'Illuminated Resort Courtyard & Poolside Lounge'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80',
+          fallback: 'https://placehold.co/1200x800/133763/FFFFFF?text=Tarang+Kitchen+Grill',
+          caption: 'Tarang Kitchen & Grill — Separate Pure Veg & Non-Veg Dining'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80',
+          fallback: 'https://placehold.co/1200x800/0E7490/FFFFFF?text=Royal+Waterfront+Suite',
+          caption: 'Royal Waterfront Presidential Suite — Panoramic Valley View'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80',
+          fallback: 'https://placehold.co/1200x800/0B2545/FFFFFF?text=Pool+Access+Villa',
+          caption: 'Jaltarang Signature Pool-Access Villa & Plunge Deck'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=80',
+          fallback: 'https://placehold.co/1200x800/133763/FFFFFF?text=Executive+Family+Suite',
+          caption: 'Executive 2-Bedroom Family Suite Living Space'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80',
+          fallback: 'https://placehold.co/1200x800/0E7490/FFFFFF?text=Lakeside+Promenade',
+          caption: 'Morning Serenity along Lakefront Drive, Sahyadri Valley'
+        }
+      ];
+
+      const ROOMS_DATA = [
+        {
+          id: 'deluxe-garden',
+          name: 'Deluxe Garden View Room',
+          price: 3800,
+          originalPrice: 4500,
+          size: '320 sq.ft',
+          bed: '1 Queen Bed',
+          maxGuests: 2,
+          view: 'Lush Tropical Garden View',
+          badge: 'Great Value',
+          badgeTone: 'teal',
+          urgency: '4 rooms available for your dates',
+          tags: ['free-cancellation'],
+          mealTags: ['all', 'breakfast', 'veg', 'both'],
+          image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80',
+          fallback: 'https://placehold.co/800x550/0B2545/FFFFFF?text=Deluxe+Garden+View',
+          description: 'Warm, sunlit retreat overlooking manicured resort lawns. Ideal for couples or solo travelers seeking crisp modern comfort, plush bedding, and tranquil garden mornings.',
+          amenities: ['Silent Split AC', 'High-Speed Fiber Wi-Fi', '43" Smart TV', 'Rain Shower & Herbal Toiletries', 'Tea/Coffee Maker', 'In-Room Electronic Safe', 'Private Sit-Out', 'Work Desk']
+        },
+        {
+          id: 'premier-lakeview',
+          name: 'Premier Lakeview Balcony Room',
+          price: 5400,
+          originalPrice: 6400,
+          size: '410 sq.ft',
+          bed: '1 King Bed',
+          maxGuests: 3,
+          view: 'Direct Lake & Hills View',
+          badge: 'Most Popular',
+          badgeTone: 'gold',
+          urgency: 'Only 2 rooms left at this rate',
+          tags: ['lake-view', 'free-cancellation'],
+          mealTags: ['all', 'breakfast', 'veg', 'both'],
+          image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80',
+          fallback: 'https://placehold.co/800x550/0E7490/FFFFFF?text=Premier+Lakeview+Room',
+          description: 'Our guest-favorite accommodation featuring floor-to-ceiling glass sliders opening onto a private lakeside balcony. Watch golden sunrises over Sahyadri Valley right from your king bed.',
+          amenities: ['Private Lakeview Balcony', 'Silent Split AC', 'High-Speed Fiber Wi-Fi', '50" Smart TV', 'Mini Refrigerator', 'Premium Orthopedic King Mattress', 'Bathrobes & Slippers', '24/7 In-Room Dining']
+        },
+        {
+          id: 'signature-pool-villa',
+          name: 'Jaltarang Signature Pool-Access Villa',
+          price: 7900,
+          originalPrice: 9200,
+          size: '580 sq.ft',
+          bed: '1 King Bed + Plunge Deck',
+          maxGuests: 3,
+          view: 'Poolside & Lake Horizon',
+          badge: 'Signature Stay',
+          badgeTone: 'navy',
+          urgency: 'Only 2 villas remaining',
+          tags: ['pool-access', 'lake-view', 'free-cancellation'],
+          mealTags: ['all', 'breakfast', 'veg', 'both'],
+          image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80',
+          fallback: 'https://placehold.co/800x550/0B2545/FFFFFF?text=Signature+Pool+Villa',
+          description: 'Step directly from your private timber lounge deck into crystal-clear pool waters. Crafted with natural teak accents, an airy lounge nook, and spa-inspired rain shower bathroom.',
+          amenities: ['Direct Pool Access Deck', 'Lounge Daybed', 'Espresso Machine', '55" 4K Smart TV', 'High-Speed Fiber Wi-Fi', 'Luxury Linen & Pillow Menu', 'Bluetooth Acoustic Speaker', 'Evening Turndown Service']
+        },
+        {
+          id: 'executive-family-suite',
+          name: 'Executive Family Suite',
+          price: 9600,
+          originalPrice: 11500,
+          size: '750 sq.ft',
+          bed: '2 Bedrooms (1 King + 2 Twin)',
+          maxGuests: 5,
+          view: 'Lake & Valley Panorama',
+          badge: 'Best for Families',
+          badgeTone: 'teal',
+          urgency: 'Ideal for up to 5 guests',
+          tags: ['family-suite', 'lake-view', 'free-cancellation'],
+          mealTags: ['all', 'breakfast', 'veg', 'both'],
+          image: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=80',
+          fallback: 'https://placehold.co/800x550/133763/FFFFFF?text=Executive+Family+Suite',
+          description: 'Thoughtfully designed two-bedroom suite with a shared living parlor and dining nook. Gives parents and children generous privacy while keeping everyone together under one roof.',
+          amenities: ['2 Separate Bedrooms', '2 En-Suite Bathrooms', 'Living Room & Dining Table', 'Dual Split AC Zones', 'High-Speed Fiber Wi-Fi', '2 Smart TVs', 'Complimentary Kids Milk/Snacks', 'Private Lakeview Veranda']
+        },
+        {
+          id: 'royal-presidential-suite',
+          name: 'Royal Waterfront Presidential Suite',
+          price: 13500,
+          originalPrice: 15800,
+          size: '1,050 sq.ft',
+          bed: '1 Super King + Panoramic Jacuzzi',
+          maxGuests: 4,
+          view: '270° Unobstructed Waterfront',
+          badge: 'Luxury Flagship',
+          badgeTone: 'gold',
+          urgency: 'Exclusive 1-of-1 Waterfront Suite',
+          tags: ['lake-view', 'pool-access', 'family-suite', 'free-cancellation'],
+          mealTags: ['all', 'breakfast', 'veg', 'both'],
+          image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80',
+          fallback: 'https://placehold.co/800x550/0B2545/FFFFFF?text=Royal+Presidential+Suite',
+          description: 'Our crown jewel hovering above the shoreline. Features a sweeping private terrace, heated outdoor Jacuzzi overlooking the lake, personal butler assistance, and bespoke dining service.',
+          amenities: ['Private Lakeview Jacuzzi', '270° Panoramic Deck', 'Dedicated Butler Service', 'Walk-in Wardrobe', 'Curated Veg/Non-Veg Welcome Platter', '65" OLED Smart TV', 'High-Speed Fiber Wi-Fi', 'Late Check-Out (Subject to Availability)']
+        }
+      ];
+
+      const MENU_ITEMS = [
+        {
+          id: 'paneer-tikka',
+          name: 'Paneer Tikka Angara',
+          type: 'veg',
+          category: 'veg',
+          price: 380,
+          tag: 'Chef Special',
+          description: 'Charcoal-smoked cottage cheese marinated in hung curd, Kashmiri chili, and roasted cumin, served with mint chutney.',
+          image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=700&q=80',
+          fallback: 'https://placehold.co/600x400/15803D/FFFFFF?text=Paneer+Tikka+Angara'
+        },
+        {
+          id: 'veg-thali',
+          name: 'Traditional Veg Thali',
+          type: 'veg',
+          category: 'veg',
+          price: 490,
+          tag: 'Pure Veg Kitchen',
+          description: 'Wholesome Maharashtrian & North Indian platter with 2 seasonal curries, dal tadka, phulka, steamed rice, papad, and sweet.',
+          image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80',
+          fallback: 'https://placehold.co/600x400/15803D/FFFFFF?text=Traditional+Veg+Thali'
+        },
+        {
+          id: 'dal-makhani',
+          name: 'Dal Makhani & Butter Naan',
+          type: 'veg',
+          category: 'veg',
+          price: 420,
+          tag: 'Slow-Cooked 18h',
+          description: 'Creamy black lentils simmered overnight over charcoal with fresh white butter, paired with crisp garlic butter naan.',
+          image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=700&q=80',
+          fallback: 'https://placehold.co/600x400/15803D/FFFFFF?text=Dal+Makhani+Naan'
+        },
+        {
+          id: 'masala-dosa',
+          name: 'Classic Masala Dosa Breakfast',
+          type: 'veg',
+          category: 'breakfast',
+          price: 240,
+          tag: 'Morning Favorite',
+          description: 'Golden crisp fermented crepe filled with spiced potato bhaji, served hot with coconut chutney, sambar, and filter coffee.',
+          image: 'https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=700&q=80',
+          fallback: 'https://placehold.co/600x400/0E7490/FFFFFF?text=Classic+Masala+Dosa'
+        },
+        {
+          id: 'butter-chicken',
+          name: 'Butter Chicken Masala',
+          type: 'nonveg',
+          category: 'nonveg',
+          price: 540,
+          tag: 'Bestseller',
+          description: 'Tandoor-roasted boneless chicken simmered in velvety heirloom tomato, fenugreek, and cashew makhani gravy.',
+          image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80',
+          fallback: 'https://placehold.co/600x400/B91C1C/FFFFFF?text=Butter+Chicken+Masala'
+        },
+        {
+          id: 'surmai-fry',
+          name: 'Coastal Surmai Tawa Fry',
+          type: 'nonveg',
+          category: 'nonveg',
+          price: 680,
+          tag: 'Konkan Spice',
+          description: 'Fresh kingfish steaks rubbed with Malvani masala and kokum, coated in fine semolina and pan-seared crisp.',
+          image: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=700&q=80',
+          fallback: 'https://placehold.co/600x400/B91C1C/FFFFFF?text=Coastal+Surmai+Fry'
+        },
+        {
+          id: 'chicken-biryani',
+          name: 'Royal Chicken Dum Biryani',
+          type: 'nonveg',
+          category: 'nonveg',
+          price: 520,
+          tag: 'Saffron Infused',
+          description: 'Long-grain aged basmati layered with spiced chicken, caramelized onions, and mint, slow-sealed in a clay handi with raita.',
+          image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=700&q=80',
+          fallback: 'https://placehold.co/600x400/B91C1C/FFFFFF?text=Royal+Chicken+Biryani'
+        },
+        {
+          id: 'tandoori-prawns',
+          name: 'Grilled Tandoori Prawns',
+          type: 'nonveg',
+          category: 'nonveg',
+          price: 740,
+          tag: 'Live Grill',
+          description: 'Jumbo coastal prawns glazed with ajwain, crushed garlic, and smoky red chili marinade, flame-grilled to perfection.',
+          image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=80',
+          fallback: 'https://placehold.co/600x400/B91C1C/FFFFFF?text=Grilled+Tandoori+Prawns'
+        }
+      ];
+
+      /* ------------------------------------------------------------------- */
+      /* 2. APPLICATION STATE                                                */
+      /* ------------------------------------------------------------------- */
+      const state = {
+        checkIn: '',
+        checkOut: '',
+        nights: 2,
+        guests: 2,
+        roomsCount: 1,
+        mealPreference: 'all',
+        roomFilter: 'all',
+        roomSort: 'recommended',
+        menuFilter: 'all',
+        savedWishlist: false,
+        lightboxIndex: 0,
+        activeRoomId: null
+      };
+
+      /* ------------------------------------------------------------------- */
+      /* 3. SAFE UTILITY HELPERS                                             */
+      /* ------------------------------------------------------------------- */
+      function formatINR(amount) {
+        return '₹' + Number(amount).toLocaleString('en-IN');
+      }
+
+      function toISODate(dateObj) {
+        const y = dateObj.getFullYear();
+        const m = String(dateObj.getMonth() + 1).padStart(2, '0');
+        const d = String(dateObj.getDate()).padStart(2, '0');
+        return y + '-' + m + '-' + d;
+      }
+
+      function formatReadableDate(isoStr) {
+        if (!isoStr) return '';
+        const parts = isoStr.split('-');
+        const d = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+        return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+      }
+
+      function calculateNights(inStr, outStr) {
+        const a = new Date(inStr + 'T00:00:00');
+        const b = new Date(outStr + 'T00:00:00');
+        const diff = Math.round((b - a) / (1000 * 60 * 60 * 24));
+        return diff > 0 ? diff : 1;
+      }
+
+      function attachImageFallback(imgEl, fallbackUrl) {
+        imgEl.addEventListener('error', function onImgError() {
+          if (imgEl.dataset.fallbackApplied === 'true') return;
+          imgEl.dataset.fallbackApplied = 'true';
+          imgEl.src = fallbackUrl;
+        });
+      }
+
+      /* Safe Toast Notification (Strictly uses textContent, zero alert()) */
+      function showToast(message, tone) {
+        const container = document.getElementById('toastContainer');
+        const toast = document.createElement('div');
+        const bgClass = tone === 'error'
+          ? 'bg-red-700 text-white'
+          : tone === 'teal'
+            ? 'bg-tealbrand text-white'
+            : 'bg-navy text-white';
+
+        toast.className = 'pointer-events-auto px-4 py-3 rounded-xl shadow-lg text-sm font-semibold flex items-center gap-2.5 border border-white/15 subtle-transition ' + bgClass;
+        toast.textContent = message;
+        container.appendChild(toast);
+
+        window.setTimeout(function () {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateY(6px)';
+          window.setTimeout(function () {
+            if (toast.parentNode) toast.parentNode.removeChild(toast);
+          }, 200);
+        }, 3200);
+      }
+
+      /* Safe Clipboard Copy supporting sandboxed iframes */
+      function copyTextSafely(textToCopy, successMsg) {
+        try {
+          const tempInput = document.createElement('textarea');
+          tempInput.value = textToCopy;
+          tempInput.setAttribute('readonly', '');
+          tempInput.style.position = 'fixed';
+          tempInput.style.opacity = '0';
+          tempInput.style.left = '-9999px';
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          const copied = document.execCommand('copy');
+          document.body.removeChild(tempInput);
+          if (copied) {
+            showToast(successMsg, 'teal');
+            return;
+          }
+        } catch (err) {
+          // Fallback handled below
+        }
+        showToast('Link ready: ' + textToCopy, 'navy');
+      }
+
+      /* Helper to build clean inline SVG icons safely without innerHTML injection */
+      function createSvgIcon(pathStrings, className) {
+        const svgNS = 'http://www.w3.org/2000/svg';
+        const svg = document.createElementNS(svgNS, 'svg');
+        svg.setAttribute('viewBox', '0 0 24 24');
+        svg.setAttribute('fill', 'none');
+        svg.setAttribute('stroke', 'currentColor');
+        svg.setAttribute('stroke-width', '2');
+        svg.setAttribute('stroke-linecap', 'round');
+        svg.setAttribute('stroke-linejoin', 'round');
+        svg.setAttribute('aria-hidden', 'true');
+        svg.setAttribute('class', className);
+
+        pathStrings.forEach(function (d) {
+          const p = document.createElementNS(svgNS, 'path');
+          p.setAttribute('d', d);
+          svg.appendChild(p);
+        });
+        return svg;
+      }
+
+      /* ------------------------------------------------------------------- */
+      /* 4. INITIALIZE DATES & SEARCH BAR                                    */
+      /* ------------------------------------------------------------------- */
+      const checkInInput = document.getElementById('searchCheckIn');
+      const checkOutInput = document.getElementById('searchCheckOut');
+      const guestsSelect = document.getElementById('searchGuests');
+      const roomsSelect = document.getElementById('searchRooms');
+      const mealSelect = document.getElementById('searchMeal');
+      const searchSummaryText = document.getElementById('searchSummaryText');
+
+      function initDates() {
+        const today = new Date();
+        const checkOutDefault = new Date(today);
+        checkOutDefault.setDate(today.getDate() + 2);
+
+        const todayISO = toISODate(today);
+        const outISO = toISODate(checkOutDefault);
+
+        checkInInput.min = todayISO;
+        checkInInput.value = todayISO;
+
+        const minOut = new Date(today);
+        minOut.setDate(today.getDate() + 1);
+        checkOutInput.min = toISODate(minOut);
+        checkOutInput.value = outISO;
+
+        state.checkIn = todayISO;
+        state.checkOut = outISO;
+        state.nights = 2;
+
+        updateSearchSummaryText();
+      }
+
+      function syncDateBounds() {
+        const todayISO = toISODate(new Date());
+        if (!checkInInput.value || checkInInput.value < todayISO) {
+          checkInInput.value = todayISO;
+        }
+        const inDate = new Date(checkInInput.value + 'T00:00:00');
+        const nextDay = new Date(inDate);
+        nextDay.setDate(inDate.getDate() + 1);
+        const nextDayISO = toISODate(nextDay);
+        checkOutInput.min = nextDayISO;
+
+        if (!checkOutInput.value || checkOutInput.value <= checkInInput.value) {
+          checkOutInput.value = nextDayISO;
+        }
+
+        state.checkIn = checkInInput.value;
+        state.checkOut = checkOutInput.value;
+        state.nights = calculateNights(state.checkIn, state.checkOut);
+      }
+
+      function updateSearchSummaryText() {
+        const mealLabels = {
+          all: 'All Meal Plans',
+          breakfast: 'Breakfast Included',
+          veg: 'Pure Veg Kitchen',
+          both: 'Veg & Non-Veg Dining'
+        };
+        const nightWord = state.nights === 1 ? 'night' : 'nights';
+        const guestWord = state.guests === 1 ? 'Guest' : 'Guests';
+        const roomWord = state.roomsCount === 1 ? 'Room' : 'Rooms';
+
+        searchSummaryText.textContent =
+          'Showing live rates for ' +
+          formatReadableDate(state.checkIn) + ' – ' + formatReadableDate(state.checkOut) +
+          ' (' + state.nights + ' ' + nightWord + ') • ' +
+          state.guests + ' ' + guestWord + ', ' +
+          state.roomsCount + ' ' + roomWord + ' • ' +
+          (mealLabels[state.mealPreference] || 'All Meal Plans');
+      }
+
+      /* ------------------------------------------------------------------- */
+      /* 5. RENDER ROOMS LIST (XSS-SAFE DOM CREATION)                        */
+      /* ------------------------------------------------------------------- */
+      function renderRooms() {
+        const container = document.getElementById('roomsContainer');
+        container.textContent = '';
+
+        // Filter rooms by category pill, meal preference, and guest capacity
+        const guestsPerRoomNeeded = Math.ceil(state.guests / state.roomsCount);
+
+        let filtered = ROOMS_DATA.filter(function (room) {
+          const matchesCategory = state.roomFilter === 'all' || room.tags.indexOf(state.roomFilter) !== -1;
+          const matchesMeal = room.mealTags.indexOf(state.mealPreference) !== -1;
+          const fitsGuests = room.maxGuests >= guestsPerRoomNeeded;
+          return matchesCategory && matchesMeal && fitsGuests;
+        });
+
+        // Sort rooms
+        if (state.roomSort === 'price-asc') {
+          filtered.sort(function (a, b) { return a.price - b.price; });
+        } else if (state.roomSort === 'price-desc') {
+          filtered.sort(function (a, b) { return b.price - a.price; });
+        }
+
+        // Empty State if filters are too restrictive
+        if (filtered.length === 0) {
+          const emptyCard = document.createElement('div');
+          emptyCard.className = 'rounded-2xl border border-borderlight bg-slatebg p-8 text-center space-y-3';
+
+          const title = document.createElement('h3');
+          title.className = 'font-display text-xl font-bold text-navy';
+          title.textContent = 'No rooms match this exact combination';
+
+          const desc = document.createElement('p');
+          desc.className = 'text-sm text-slate-600 max-w-md mx-auto';
+          desc.textContent = 'Try increasing the number of rooms for ' + state.guests + ' guests, or switch back to All Rooms.';
+
+          const resetBtn = document.createElement('button');
+          resetBtn.type = 'button';
+          resetBtn.className = 'px-5 py-2.5 rounded-xl bg-navy text-white text-sm font-semibold hover:bg-navy-light subtle-transition';
+          resetBtn.textContent = 'Reset Room Filters';
+          resetBtn.addEventListener('click', function () {
+            state.roomFilter = 'all';
+            state.guests = 2;
+            state.roomsCount = 1;
+            guestsSelect.value = '2';
+            roomsSelect.value = '1';
+            updateRoomFilterButtons();
+            updateSearchSummaryText();
+            renderRooms();
+          });
+
+          emptyCard.appendChild(title);
+          emptyCard.appendChild(desc);
+          emptyCard.appendChild(resetBtn);
+          container.appendChild(emptyCard);
+          return;
+        }
+
+        filtered.forEach(function (room) {
+          const discountPct = Math.round(((room.originalPrice - room.price) / room.originalPrice) * 100);
+          const baseTotal = room.price * state.nights * state.roomsCount;
+          const gstAmount = Math.round(baseTotal * GST_RATE);
+          const grandTotal = baseTotal + gstAmount;
+
+          const card = document.createElement('article');
+          card.className = 'bg-white rounded-2xl border border-borderlight shadow-card hover:shadow-card-hover subtle-transition overflow-hidden grid grid-cols-1 lg:grid-cols-12';
+
+          // ---- Column 1: Photo (4 cols) ----
+          const photoCol = document.createElement('div');
+          photoCol.className = 'relative lg:col-span-4 min-h-[220px] lg:min-h-full img-placeholder-bg overflow-hidden';
+
+          const img = document.createElement('img');
+          img.src = room.image;
+          img.alt = room.name + ' at Jaltarang Hotel';
+          img.loading = 'lazy';
+          img.className = 'w-full h-full object-cover';
+          attachImageFallback(img, room.fallback);
+          photoCol.appendChild(img);
+
+          // Highlight Badge
+          const badge = document.createElement('span');
+          const badgeStyle = room.badgeTone === 'gold'
+            ? 'bg-gold text-navy'
+            : room.badgeTone === 'teal'
+              ? 'bg-tealbrand text-white'
+              : 'bg-navy text-white';
+          badge.className = 'absolute top-3 left-3 px-3 py-1 rounded-lg text-xs font-bold shadow-sm ' + badgeStyle;
+          badge.textContent = room.badge;
+          photoCol.appendChild(badge);
+
+          // ---- Column 2: Specs & Perks (5 cols) ----
+          const infoCol = document.createElement('div');
+          infoCol.className = 'lg:col-span-5 p-5 sm:p-6 flex flex-col justify-between gap-4 border-b lg:border-b-0 lg:border-r border-borderlight';
+
+          const topInfo = document.createElement('div');
+          topInfo.className = 'space-y-3';
+
+          const headingRow = document.createElement('div');
+          const roomTitle = document.createElement('h3');
+          roomTitle.className = 'font-display text-xl font-bold text-navy';
+          roomTitle.textContent = room.name;
+
+          const urgencyNote = document.createElement('p');
+          urgencyNote.className = 'text-xs font-semibold text-amber-700 mt-0.5';
+          urgencyNote.textContent = room.urgency;
+
+          headingRow.appendChild(roomTitle);
+          headingRow.appendChild(urgencyNote);
+          topInfo.appendChild(headingRow);
+
+          // Quick Specs Grid with SVG icons
+          const specsGrid = document.createElement('div');
+          specsGrid.className = 'grid grid-cols-2 gap-y-2 gap-x-3 text-xs font-medium text-slate-600 pt-1';
+
+          const specItems = [
+            { text: room.size, paths: ['M3 3h18v18H3z', 'M3 9h18', 'M9 21V9'] },
+            { text: room.bed, paths: ['M2 4v16', 'M2 8h18a2 2 0 0 1 2 2v10', 'M2 17h20', 'M6 8v9'] },
+            { text: 'Max ' + room.maxGuests + ' Guests / room', paths: ['M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2', 'M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z'] },
+            { text: room.view, paths: ['M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z', 'M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'] }
+          ];
+
+          specItems.forEach(function (spec) {
+            const item = document.createElement('div');
+            item.className = 'flex items-center gap-1.5';
+            item.appendChild(createSvgIcon(spec.paths, 'w-3.5 h-3.5 text-tealbrand shrink-0'));
+            const span = document.createElement('span');
+            span.textContent = spec.text;
+            item.appendChild(span);
+            specsGrid.appendChild(item);
+          });
+          topInfo.appendChild(specsGrid);
+
+          // Clear Booking Perks
+          const perksWrap = document.createElement('div');
+          perksWrap.className = 'flex flex-wrap gap-2 pt-1';
+
+          const perks = [
+            'Free Cancellation',
+            'Breakfast Included',
+            'Pay at Property',
+            'AC & Free Wi-Fi'
+          ];
+          perks.forEach(function (perkLabel) {
+            const pill = document.createElement('span');
+            pill.className = 'inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 text-[11px] font-semibold border border-emerald-200/70';
+            pill.textContent = '✓ ' + perkLabel;
+            perksWrap.appendChild(pill);
+          });
+          topInfo.appendChild(perksWrap);
+
+          infoCol.appendChild(topInfo);
+
+          // Room Details Trigger Link
+          const bottomLinks = document.createElement('div');
+          bottomLinks.className = 'flex items-center justify-between pt-2 border-t border-slate-100';
+
+          const kitchenTag = document.createElement('span');
+          kitchenTag.className = 'text-[11px] font-semibold text-slate-500';
+          kitchenTag.textContent = state.mealPreference === 'veg'
+            ? 'Pure Veg Kitchen Plan Selected'
+            : 'Veg & Non-Veg Dining Options';
+
+          const detailBtn = document.createElement('button');
+          detailBtn.type = 'button';
+          detailBtn.className = 'text-xs font-bold text-tealbrand hover:text-navy underline underline-offset-4 subtle-transition';
+          detailBtn.textContent = 'Room Details';
+          detailBtn.addEventListener('click', function () {
+            openRoomDetailsModal(room);
+          });
+
+          bottomLinks.appendChild(kitchenTag);
+          bottomLinks.appendChild(detailBtn);
+          infoCol.appendChild(bottomLinks);
+
+          // ---- Column 3: Pricing & CTA (3 cols) ----
+          const priceCol = document.createElement('div');
+          priceCol.className = 'lg:col-span-3 p-5 sm:p-6 bg-slatebg/70 flex flex-col justify-between gap-4';
+
+          const priceTop = document.createElement('div');
+          priceTop.className = 'space-y-1 lg:text-right';
+
+          // Discount + Original Strikethrough Price
+          const discountRow = document.createElement('div');
+          discountRow.className = 'flex items-center lg:justify-end gap-2';
+
+          const origSpan = document.createElement('span');
+          origSpan.className = 'text-xs text-slate-400 line-through tabular-nums';
+          origSpan.textContent = formatINR(room.originalPrice);
+
+          const pctBadge = document.createElement('span');
+          pctBadge.className = 'px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[11px] font-bold tabular-nums';
+          pctBadge.textContent = discountPct + '% OFF';
+
+          discountRow.appendChild(origSpan);
+          discountRow.appendChild(pctBadge);
+          priceTop.appendChild(discountRow);
+
+          // Per Night Rate
+          const nightRate = document.createElement('div');
+          nightRate.className = 'flex items-baseline lg:justify-end gap-1';
+          const rateAmount = document.createElement('span');
+          rateAmount.className = 'text-2xl font-extrabold text-navy tabular-nums';
+          rateAmount.textContent = formatINR(room.price);
+          const perNightLbl = document.createElement('span');
+          perNightLbl.className = 'text-xs font-medium text-slate-500';
+          perNightLbl.textContent = '/ night';
+          nightRate.appendChild(rateAmount);
+          nightRate.appendChild(perNightLbl);
+          priceTop.appendChild(nightRate);
+
+          // Dynamic Multi-Night + GST Total Transparency Box
+          const totalBox = document.createElement('div');
+          totalBox.className = 'mt-2 pt-2 border-t border-borderlight text-xs text-slate-600 space-y-0.5 tabular-nums';
+
+          const stayCalc = document.createElement('p');
+          stayCalc.className = 'font-semibold text-navy';
+          stayCalc.textContent =
+            formatINR(grandTotal) + ' total (' +
+            state.nights + (state.nights === 1 ? ' night' : ' nights') +
+            (state.roomsCount > 1 ? ' × ' + state.roomsCount + ' rooms' : '') + ')';
+
+          const taxNote = document.createElement('p');
+          taxNote.className = 'text-[11px] text-slate-500';
+          taxNote.textContent = 'Includes ' + formatINR(gstAmount) + ' (12% GST)';
+
+          totalBox.appendChild(stayCalc);
+          totalBox.appendChild(taxNote);
+          priceTop.appendChild(totalBox);
+
+          // Select Room Button
+          const selectBtn = document.createElement('button');
+          selectBtn.type = 'button';
+          selectBtn.className = 'w-full py-3 px-4 rounded-xl bg-navy hover:bg-navy-light text-white text-sm font-bold shadow-sm subtle-transition';
+          selectBtn.textContent = 'Select Room';
+          selectBtn.addEventListener('click', function () {
+            openBookingModal(room);
+          });
+
+          priceCol.appendChild(priceTop);
+          priceCol.appendChild(selectBtn);
+
+          card.appendChild(photoCol);
+          card.appendChild(infoCol);
+          card.appendChild(priceCol);
+          container.appendChild(card);
+        });
+      }
+
+      /* ------------------------------------------------------------------- */
+      /* 6. RENDER DINING MENU CARDS (FSSAI VEG / NON-VEG MARKS)             */
+      /* ------------------------------------------------------------------- */
+      function renderMenu() {
+        const container = document.getElementById('menuContainer');
+        container.textContent = '';
+
+        const items = MENU_ITEMS.filter(function (dish) {
+          if (state.menuFilter === 'all') return true;
+          if (state.menuFilter === 'veg') return dish.type === 'veg';
+          if (state.menuFilter === 'nonveg') return dish.type === 'nonveg';
+          if (state.menuFilter === 'breakfast') return dish.category === 'breakfast';
+          return true;
+        });
+
+        items.forEach(function (dish) {
+          const card = document.createElement('article');
+          card.className = 'bg-white rounded-2xl border border-borderlight shadow-card hover:shadow-card-hover subtle-transition overflow-hidden flex flex-col';
+
+          // Photo Container
+          const imgWrap = document.createElement('div');
+          imgWrap.className = 'relative aspect-[4/3] img-placeholder-bg overflow-hidden';
+
+          const img = document.createElement('img');
+          img.src = dish.image;
+          img.alt = dish.name;
+          img.loading = 'lazy';
+          img.className = 'w-full h-full object-cover';
+          attachImageFallback(img, dish.fallback);
+          imgWrap.appendChild(img);
+
+          // Tag Pill
+          const tag = document.createElement('span');
+          tag.className = 'absolute top-2.5 left-2.5 px-2.5 py-1 rounded-lg bg-white/95 text-navy text-[11px] font-bold shadow-xs';
+          tag.textContent = dish.tag;
+          imgWrap.appendChild(tag);
+
+          // Content Body
+          const body = document.createElement('div');
+          body.className = 'p-4 flex-1 flex flex-col justify-between gap-3';
+
+          const top = document.createElement('div');
+          top.className = 'space-y-1.5';
+
+          const headerRow = document.createElement('div');
+          headerRow.className = 'flex items-start gap-2';
+
+          // Authentic FSSAI Square Veg / Non-Veg Symbol
+          const fssaiMark = document.createElement('span');
+          fssaiMark.className = dish.type === 'veg' ? 'fssai-veg mt-0.5' : 'fssai-nonveg mt-0.5';
+          fssaiMark.setAttribute('title', dish.type === 'veg' ? 'Pure Veg' : 'Non-Veg');
+          fssaiMark.setAttribute('aria-label', dish.type === 'veg' ? 'Pure Vegetarian dish' : 'Non-Vegetarian dish');
+
+          const dishTitle = document.createElement('h3');
+          dishTitle.className = 'text-sm sm:text-base font-bold text-navy leading-snug';
+          dishTitle.textContent = dish.name;
+
+          headerRow.appendChild(fssaiMark);
+          headerRow.appendChild(dishTitle);
+
+          const desc = document.createElement('p');
+          desc.className = 'text-xs text-slate-600 leading-relaxed';
+          desc.textContent = dish.description;
+
+          top.appendChild(headerRow);
+          top.appendChild(desc);
+
+          const footer = document.createElement('div');
+          footer.className = 'pt-2.5 border-t border-slate-100 flex items-center justify-between';
+
+          const priceEl = document.createElement('span');
+          priceEl.className = 'text-base font-extrabold text-navy tabular-nums';
+          priceEl.textContent = formatINR(dish.price);
+
+          const kitchenBadge = document.createElement('span');
+          kitchenBadge.className = dish.type === 'veg'
+            ? 'text-[11px] font-semibold text-emerald-700'
+            : 'text-[11px] font-semibold text-red-700';
+          kitchenBadge.textContent = dish.type === 'veg' ? 'Pure Veg Kitchen' : 'Non-Veg Kitchen';
+
+          footer.appendChild(priceEl);
+          footer.appendChild(kitchenBadge);
+
+          body.appendChild(top);
+          body.appendChild(footer);
+
+          card.appendChild(imgWrap);
+          card.appendChild(body);
+          container.appendChild(card);
+        });
+      }
+
+      /* ------------------------------------------------------------------- */
+      /* 7. LIGHTBOX GALLERY MODAL LOGIC                                     */
+      /* ------------------------------------------------------------------- */
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxCounter = document.getElementById('lightboxCounter');
+
+      function updateLightboxView() {
+        const photo = GALLERY_PHOTOS[state.lightboxIndex];
+        lightboxImage.dataset.fallbackApplied = 'false';
+        lightboxImage.src = photo.src;
+        lightboxImage.alt = photo.caption;
+        lightboxCaption.textContent = photo.caption;
+        lightboxCounter.textContent = (state.lightboxIndex + 1) + ' / ' + GALLERY_PHOTOS.length;
+      }
+
+      function openLightbox(index) {
+        state.lightboxIndex = (index + GALLERY_PHOTOS.length) % GALLERY_PHOTOS.length;
+        updateLightboxView();
+        lightboxModal.classList.remove('hidden');
+        lightboxModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+        document.getElementById('lightboxCloseBtn').focus();
+      }
+
+      function closeLightbox() {
+        lightboxModal.classList.add('hidden');
+        lightboxModal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      lightboxImage.addEventListener('error', function () {
+        if (lightboxImage.dataset.fallbackApplied === 'true') return;
+        lightboxImage.dataset.fallbackApplied = 'true';
+        lightboxImage.src = GALLERY_PHOTOS[state.lightboxIndex].fallback;
+      });
+
+      /* ------------------------------------------------------------------- */
+      /* 8. ROOM DETAILS MODAL LOGIC                                         */
+      /* ------------------------------------------------------------------- */
+      const roomDetailsModal = document.getElementById('roomDetailsModal');
+      let currentDetailRoom = null;
+
+      function openRoomDetailsModal(room) {
+        currentDetailRoom = room;
+        const baseTotal = room.price * state.nights * state.roomsCount;
+        const gst = Math.round(baseTotal * GST_RATE);
+
+        document.getElementById('detailModalBadge').textContent = room.badge;
+        document.getElementById('detailModalTitle').textContent = room.name;
+
+        const detailImg = document.getElementById('detailModalImg');
+        detailImg.dataset.fallbackApplied = 'false';
+        detailImg.src = room.image;
+        detailImg.alt = room.name;
+        attachImageFallback(detailImg, room.fallback);
+
+        document.getElementById('detailModalDesc').textContent = room.description;
+
+        const specsBox = document.getElementById('detailModalSpecs');
+        specsBox.textContent = '';
+        [
+          { label: 'Room Size', value: room.size },
+          { label: 'Bedding', value: room.bed },
+          { label: 'Capacity', value: 'Up to ' + room.maxGuests + ' Guests' },
+          { label: 'View', value: room.view }
+        ].forEach(function (spec) {
+          const tile = document.createElement('div');
+          tile.className = 'p-3 rounded-xl bg-slatebg border border-borderlight';
+          const lbl = document.createElement('span');
+          lbl.className = 'block text-[11px] font-bold uppercase tracking-wider text-slate-500';
+          lbl.textContent = spec.label;
+          const val = document.createElement('span');
+          val.className = 'block text-xs sm:text-sm font-bold text-navy mt-0.5';
+          val.textContent = spec.value;
+          tile.appendChild(lbl);
+          tile.appendChild(val);
+          specsBox.appendChild(tile);
+        });
+
+        const amenitiesList = document.getElementById('detailModalAmenities');
+        amenitiesList.textContent = '';
+        room.amenities.forEach(function (am) {
+          const li = document.createElement('li');
+          li.className = 'flex items-center gap-2';
+          const check = document.createElement('span');
+          check.className = 'text-tealbrand font-bold';
+          check.textContent = '✓';
+          const text = document.createElement('span');
+          text.textContent = am;
+          li.appendChild(check);
+          li.appendChild(text);
+          amenitiesList.appendChild(li);
+        });
+
+        document.getElementById('detailModalPrice').textContent = formatINR(room.price) + ' / night';
+        document.getElementById('detailModalTaxNote').textContent =
+          'Total for ' + state.nights + (state.nights === 1 ? ' night: ' : ' nights: ') +
+          formatINR(baseTotal + gst) + ' (incl. 12% GST)';
+
+        roomDetailsModal.classList.remove('hidden');
+        roomDetailsModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeRoomDetailsModal() {
+        roomDetailsModal.classList.add('hidden');
+        roomDetailsModal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      /* ------------------------------------------------------------------- */
+      /* 9. SECURE BOOKING MODAL & STRICT VALIDATION                         */
+      /* ------------------------------------------------------------------- */
+      const bookingModal = document.getElementById('bookingModal');
+      const bookingFormView = document.getElementById('bookingFormView');
+      const bookingConfirmView = document.getElementById('bookingConfirmView');
+      const guestBookingForm = document.getElementById('guestBookingForm');
+
+      function clearFormErrors() {
+        ['errFullName', 'errEmail', 'errPhone'].forEach(function (id) {
+          const el = document.getElementById(id);
+          el.textContent = '';
+          el.classList.add('hidden');
+        });
+      }
+
+      function showFieldError(errId, message) {
+        const el = document.getElementById(errId);
+        el.textContent = message;
+        el.classList.remove('hidden');
+      }
+
+      function openBookingModal(room) {
+        state.activeRoomId = room.id;
+        clearFormErrors();
+
+        // Reset view to step 1
+        bookingConfirmView.classList.add('hidden');
+        bookingFormView.classList.remove('hidden');
+
+        // Pre-sync dietary preference if user filtered Pure Veg
+        const dietaryEl = document.getElementById('guestDietary');
+        if (state.mealPreference === 'veg') {
+          dietaryEl.value = 'Pure Veg';
+        }
+
+        // Populate Live Itemized Breakdown safely using textContent
+        const basePrice = room.price * state.nights * state.roomsCount;
+        const gstAmount = Math.round(basePrice * GST_RATE);
+        const grandTotal = basePrice + gstAmount;
+
+        document.getElementById('summaryRoomName').textContent = room.name;
+        document.getElementById('summaryRoomMeta').textContent = room.size + ' • ' + room.bed;
+        document.getElementById('summaryCheckIn').textContent = formatReadableDate(state.checkIn);
+        document.getElementById('summaryCheckOut').textContent = formatReadableDate(state.checkOut);
+        document.getElementById('summaryNightsRooms').textContent =
+          state.nights + (state.nights === 1 ? ' Night' : ' Nights') + ' • ' +
+          state.roomsCount + (state.roomsCount === 1 ? ' Room' : ' Rooms');
+        document.getElementById('summaryGuests').textContent =
+          state.guests + (state.guests === 1 ? ' Guest' : ' Guests');
+        document.getElementById('summaryBasePrice').textContent = formatINR(basePrice);
+        document.getElementById('summaryGst').textContent = formatINR(gstAmount);
+        document.getElementById('summaryGrandTotal').textContent = formatINR(grandTotal);
+
+        bookingModal.classList.remove('hidden');
+        bookingModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+        document.getElementById('guestFullName').focus();
+      }
+
+      function closeBookingModal() {
+        bookingModal.classList.add('hidden');
+        bookingModal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      function generateBookingRef() {
+        const year = new Date().getFullYear();
+        let randomDigits = '';
+        if (window.crypto && window.crypto.getRandomValues) {
+          const arr = new Uint32Array(1);
+          window.crypto.getRandomValues(arr);
+          randomDigits = String(1000 + (arr[0] % 9000));
+        } else {
+          randomDigits = String(Math.floor(1000 + Math.random() * 9000));
+        }
+        return 'JLT-' + year + '-' + randomDigits;
+      }
+
+      guestBookingForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        clearFormErrors();
+
+        const fullName = document.getElementById('guestFullName').value.trim();
+        const email = document.getElementById('guestEmail').value.trim();
+        const phone = document.getElementById('guestPhone').value.trim();
+        const dietary = document.getElementById('guestDietary').value;
+        const requests = document.getElementById('guestRequests').value.trim();
+
+        let isValid = true;
+
+        // Validate Full Name (letters, spaces, dots, hyphens)
+        const nameRegex = /^[A-Za-z][A-Za-z\s.'-]{1,79}$/;
+        if (!nameRegex.test(fullName)) {
+          showFieldError('errFullName', 'Please enter a valid full name (2–80 alphabetic characters).');
+          isValid = false;
+        }
+
+        // Validate Email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+        if (!emailRegex.test(email) || email.length > 120) {
+          showFieldError('errEmail', 'Please enter a valid email address.');
+          isValid = false;
+        }
+
+        // Validate 10-digit Indian Mobile Number (starts with 6, 7, 8, or 9)
+        const phoneRegex = /^[6-9]\d{9}$/;
+        if (!phoneRegex.test(phone)) {
+          showFieldError('errPhone', 'Enter a valid 10-digit Indian mobile number starting with 6–9.');
+          isValid = false;
+        }
+
+        if (!isValid) {
+          showToast('Please correct the highlighted fields.', 'error');
+          return;
+        }
+
+        const room = ROOMS_DATA.find(function (r) { return r.id === state.activeRoomId; });
+        if (!room) return;
+
+        const basePrice = room.price * state.nights * state.roomsCount;
+        const gstAmount = Math.round(basePrice * GST_RATE);
+        const grandTotal = basePrice + gstAmount;
+        const refId = generateBookingRef();
+
+        // Populate confirmation view strictly with textContent (100% XSS-safe)
+        document.getElementById('confirmRefId').textContent = refId;
+        document.getElementById('confirmGuestName').textContent = fullName;
+        document.getElementById('confirmContact').textContent = '+91 ' + phone + ' • ' + email;
+        document.getElementById('confirmRoom').textContent =
+          room.name + ' (' + state.roomsCount + (state.roomsCount === 1 ? ' Room)' : ' Rooms)');
+        document.getElementById('confirmDates').textContent =
+          formatReadableDate(state.checkIn) + ' – ' + formatReadableDate(state.checkOut) +
+          ' (' + state.nights + (state.nights === 1 ? ' Night)' : ' Nights)');
+        document.getElementById('confirmDietary').textContent = dietary;
+        document.getElementById('confirmTotal').textContent = formatINR(grandTotal);
+
+        const reqRow = document.getElementById('confirmRequestsRow');
+        if (requests.length > 0) {
+          document.getElementById('confirmRequests').textContent = requests;
+          reqRow.classList.remove('hidden');
+        } else {
+          reqRow.classList.add('hidden');
+        }
+
+        bookingFormView.classList.add('hidden');
+        bookingConfirmView.classList.remove('hidden');
+        showToast('Booking confirmed! Ref: ' + refId, 'teal');
+      });
+
+      /* ------------------------------------------------------------------- */
+      /* 10. FILTER & INTERACTIVE UI EVENT LISTENERS                         */
+      /* ------------------------------------------------------------------- */
+      function updateRoomFilterButtons() {
+        document.querySelectorAll('.room-filter-btn').forEach(function (btn) {
+          const active = btn.dataset.roomFilter === state.roomFilter;
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+          if (active) {
+            btn.className = 'room-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-navy bg-navy text-white shrink-0 subtle-transition';
+          } else {
+            btn.className = 'room-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-borderlight bg-white text-slate-700 hover:border-navy hover:text-navy shrink-0 subtle-transition';
+          }
+        });
+      }
+
+      function updateMenuFilterButtons() {
+        document.querySelectorAll('.menu-filter-btn').forEach(function (btn) {
+          const active = btn.dataset.menuFilter === state.menuFilter;
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+          const hasIcon = btn.querySelector('.fssai-veg, .fssai-nonveg') !== null;
+          const baseLayout = hasIcon ? 'inline-flex items-center gap-2 ' : '';
+          if (active) {
+            btn.className = 'menu-filter-btn ' + baseLayout + 'px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-navy bg-navy text-white shrink-0 subtle-transition';
+          } else {
+            btn.className = 'menu-filter-btn ' + baseLayout + 'px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-borderlight bg-white text-slate-700 hover:border-navy hover:text-navy shrink-0 subtle-transition';
+          }
+        });
+      }
+
+      function bindAllEvents() {
+        // Attach fallback error handlers on static gallery images
+        document.querySelectorAll('img[data-fallback]').forEach(function (imgEl) {
+          attachImageFallback(imgEl, imgEl.dataset.fallback);
+        });
+
+        // Mobile Drawer open / close
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const mobileBackdrop = document.getElementById('mobileDrawerBackdrop');
+
+        function setMobileMenu(open) {
+          mobileMenuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          mobileDrawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+          if (open) {
+            mobileBackdrop.classList.remove('hidden');
+            mobileDrawer.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+          } else {
+            mobileBackdrop.classList.add('hidden');
+            mobileDrawer.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+          }
+        }
+
+        mobileMenuBtn.addEventListener('click', function () { setMobileMenu(true); });
+        mobileCloseBtn.addEventListener('click', function () { setMobileMenu(false); });
+        mobileBackdrop.addEventListener('click', function () { setMobileMenu(false); });
+        document.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+          link.addEventListener('click', function () { setMobileMenu(false); });
+        });
+
+        // Wishlist Toggle
+        const wishlistBtn = document.getElementById('wishlistBtn');
+        const wishlistIcon = document.getElementById('wishlistIcon');
+        const wishlistLabel = document.getElementById('wishlistLabel');
+        wishlistBtn.addEventListener('click', function () {
+          state.savedWishlist = !state.savedWishlist;
+          wishlistBtn.setAttribute('aria-pressed', state.savedWishlist ? 'true' : 'false');
+          if (state.savedWishlist) {
+            wishlistIcon.setAttribute('fill', '#E11D48');
+            wishlistIcon.setAttribute('stroke', '#E11D48');
+            wishlistLabel.textContent = 'Saved';
+            wishlistBtn.classList.add('border-rose-300', 'text-rose-600', 'bg-rose-50');
+            showToast('Saved Jaltarang Hotel to your wishlist.', 'navy');
+          } else {
+            wishlistIcon.setAttribute('fill', 'none');
+            wishlistIcon.setAttribute('stroke', 'currentColor');
+            wishlistLabel.textContent = 'Save';
+            wishlistBtn.classList.remove('border-rose-300', 'text-rose-600', 'bg-rose-50');
+            showToast('Removed from your wishlist.', 'navy');
+          }
+        });
+
+        // Share Link Button
+        document.getElementById('shareBtn').addEventListener('click', function () {
+          const shareUrl = window.location.href;
+          copyTextSafely(shareUrl, 'Resort link copied to clipboard!');
+        });
+
+        // Gallery Triggers & Lightbox Controls
+        document.querySelectorAll('.gallery-trigger').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            openLightbox(Number(btn.dataset.galleryIndex) || 0);
+          });
+        });
+        document.getElementById('viewAllPhotosBtn').addEventListener('click', function () {
+          openLightbox(0);
+        });
+        document.getElementById('lightboxCloseBtn').addEventListener('click', closeLightbox);
+        document.getElementById('lightboxPrevBtn').addEventListener('click', function () {
+          state.lightboxIndex = (state.lightboxIndex - 1 + GALLERY_PHOTOS.length) % GALLERY_PHOTOS.length;
+          updateLightboxView();
+        });
+        document.getElementById('lightboxNextBtn').addEventListener('click', function () {
+          state.lightboxIndex = (state.lightboxIndex + 1) % GALLERY_PHOTOS.length;
+          updateLightboxView();
+        });
+        lightboxModal.addEventListener('click', function (e) {
+          if (e.target === lightboxModal) closeLightbox();
+        });
+
+        // Availability Search Form & Inputs
+        checkInInput.addEventListener('change', function () {
+          syncDateBounds();
+          updateSearchSummaryText();
+          renderRooms();
+        });
+        checkOutInput.addEventListener('change', function () {
+          syncDateBounds();
+          updateSearchSummaryText();
+          renderRooms();
+        });
+        document.getElementById('availabilityForm').addEventListener('submit', function (e) {
+          e.preventDefault();
+          syncDateBounds();
+          state.guests = Math.min(5, Math.max(1, parseInt(guestsSelect.value, 10) || 2));
+          state.roomsCount = Math.min(3, Math.max(1, parseInt(roomsSelect.value, 10) || 1));
+          state.mealPreference = mealSelect.value || 'all';
+
+          updateSearchSummaryText();
+          renderRooms();
+
+          const roomsSection = document.getElementById('rooms');
+          roomsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          showToast('Availability & multi-night pricing updated!', 'teal');
+        });
+
+        // Room Filter Pills & Sort
+        document.querySelectorAll('.room-filter-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            state.roomFilter = btn.dataset.roomFilter || 'all';
+            updateRoomFilterButtons();
+            renderRooms();
+          });
+        });
+        document.getElementById('roomSortSelect').addEventListener('change', function (e) {
+          state.roomSort = e.target.value;
+          renderRooms();
+        });
+
+        // Menu Filter Tabs
+        document.querySelectorAll('.menu-filter-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            state.menuFilter = btn.dataset.menuFilter || 'all';
+            updateMenuFilterButtons();
+            renderMenu();
+          });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-trigger').forEach(function (trigger) {
+          trigger.addEventListener('click', function () {
+            const expanded = trigger.getAttribute('aria-expanded') === 'true';
+            const panelId = trigger.getAttribute('aria-controls');
+            const panel = document.getElementById(panelId);
+            const chevron = trigger.querySelector('.faq-chevron');
+
+            trigger.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            if (expanded) {
+              panel.classList.add('hidden');
+              chevron.classList.remove('rotate-180');
+            } else {
+              panel.classList.remove('hidden');
+              chevron.classList.add('rotate-180');
+            }
+          });
+        });
+
+        // Room Details Modal Controls
+        document.getElementById('closeRoomDetailsBtn').addEventListener('click', closeRoomDetailsModal);
+        roomDetailsModal.addEventListener('click', function (e) {
+          if (e.target === roomDetailsModal) closeRoomDetailsModal();
+        });
+        document.getElementById('detailModalSelectBtn').addEventListener('click', function () {
+          const selected = currentDetailRoom;
+          closeRoomDetailsModal();
+          if (selected) openBookingModal(selected);
+        });
+
+        // Booking Modal Controls
+        document.getElementById('closeBookingModalBtn').addEventListener('click', closeBookingModal);
+        document.getElementById('doneBookingBtn').addEventListener('click', function () {
+          guestBookingForm.reset();
+          document.getElementById('reqCharCount').textContent = '0 / 250';
+          closeBookingModal();
+        });
+        bookingModal.addEventListener('click', function (e) {
+          if (e.target === bookingModal) closeBookingModal();
+        });
+
+        // Sanitize mobile input to digits only & live character counter for Special Requests
+        document.getElementById('guestPhone').addEventListener('input', function (e) {
+          e.target.value = e.target.value.replace(/\D/g, '').slice(0, 10);
+        });
+        document.getElementById('guestRequests').addEventListener('input', function (e) {
+          document.getElementById('reqCharCount').textContent = e.target.value.length + ' / 250';
+        });
+
+        // Copy Reference ID in Confirmation Screen
+        document.getElementById('copyRefBtn').addEventListener('click', function () {
+          const refText = document.getElementById('confirmRefId').textContent;
+          copyTextSafely(refText, 'Booking reference ' + refText + ' copied!');
+        });
+
+        // Global Keyboard Controls (Escape closes active overlays, Left/Right navigates Lightbox)
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') {
+            if (!lightboxModal.classList.contains('hidden')) closeLightbox();
+            if (!roomDetailsModal.classList.contains('hidden')) closeRoomDetailsModal();
+            if (!bookingModal.classList.contains('hidden')) closeBookingModal();
+            setMobileMenu(false);
+          } else if (!lightboxModal.classList.contains('hidden')) {
+            if (e.key === 'ArrowLeft') {
+              state.lightboxIndex = (state.lightboxIndex - 1 + GALLERY_PHOTOS.length) % GALLERY_PHOTOS.length;
+              updateLightboxView();
+            } else if (e.key === 'ArrowRight') {
+              state.lightboxIndex = (state.lightboxIndex + 1) % GALLERY_PHOTOS.length;
+              updateLightboxView();
+            }
+          }
+        });
+      }
+
+      /* ------------------------------------------------------------------- */
+      /* 11. BOOTSTRAP APPLICATION ON DOM CONTENT LOADED                     */
+      /* ------------------------------------------------------------------- */
+      document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('currentYear').textContent = String(new Date().getFullYear());
+        initDates();
+        bindAllEvents();
+        renderRooms();
+        renderMenu();
+      });
+
+    })();
+  </script>
+</body>
+</html>
